@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 02:25:57</sys_created_on>
+        <sys_id>1b58693cc358d6d05f909e1d0501315a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1507800_complian_github_segregation_of_duties.x_1507800_complian.ccuser</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_security_acl display_value="x_1507800_complian_github_segregation_of_duties">5b58693cc358d6d05f909e1d0501313a</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_1b58693cc358d6d05f909e1d0501315a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 02:25:57</sys_updated_on>
+        <sys_user_role display_value="x_1507800_complian.ccuser" name="x_1507800_complian.ccuser">1332e9f0c3d4d6d05f909e1d05013120</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

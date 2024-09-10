@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_applet_launcher_tab">
+    <sys_sg_applet_launcher_tab action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applet_launcher display_value="ComplianceCowV1">235a6db4c3d4d6d05f909e1d05013150</applet_launcher>
+        <icon display_value="Home ComplianceCowV1">a75a6db4c3d4d6d05f909e1d05013152</icon>
+        <label>ComplianceCowV1</label>
+        <sys_class_name>sys_sg_applet_launcher_tab</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 02:34:42</sys_created_on>
+        <sys_id>675a6db4c3d4d6d05f909e1d05013152</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ComplianceCowV1</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_update_name>sys_sg_applet_launcher_tab_675a6db4c3d4d6d05f909e1d05013152</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 02:34:42</sys_updated_on>
+    </sys_sg_applet_launcher_tab>
+</record_update>

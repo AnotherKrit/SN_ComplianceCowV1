@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c4091931c3e89e105f909e1d05013144" label="Compliance Cow AWS Resources" max_length="40" name="x_1507800_complian_ccawsresources" type="collection">
+        <element label="ResourceType" max_length="40" name="resourcetype" type="string"/>
+        <element label="ResourceLocation" max_length="40" name="resourcelocation" type="string"/>
+        <element default="100" label="ResourceId" max_length="40" name="resourceid" type="string"/>
+        <element default="200" label="ResourceURL" max_length="40" name="resourceurl" type="string"/>
+        <element default="100" display="true" label="ResourceName" max_length="40" name="resourcename" type="string"/>
+    </element>
+</database>

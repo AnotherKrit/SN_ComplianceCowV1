@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="3a233c85c3581ed05f909e1d05013198" label="CC Assessment Status" max_length="40" name="x_1507800_complian_assessment_stat" type="collection">
+        <element label="Assessment Id" max_length="32" name="assessment_id" reference="x_1507800_complian_assessment" type="reference"/>
+        <element label="Started Time" max_length="40" name="started_time" type="glide_date_time"/>
+        <element label="Assessment Run Id" max_length="40" name="assessment_run_id" type="string"/>
+        <element label="Started By" max_length="32" name="started_by" reference="sys_user" type="reference"/>
+        <element label="Response Error Message" max_length="40" name="response_error_message" type="string"/>
+        <element label="Response Status Code" max_length="40" name="response_status_code" type="integer"/>
+        <element choice="1" label="Request Status" max_length="40" name="request_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Requested" value="Requested"/>
+                <element inactive_on_update="false" label="Started" value="Started"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="assessment_id"/>
+        </index>
+        <index name="index2">
+            <element name="started_by"/>
+        </index>
+    </element>
+</database>

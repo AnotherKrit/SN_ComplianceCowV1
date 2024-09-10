@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>oauth2</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>let formData = new FormData();&#13;
+formData.append('grant-type', 'client-credentials);</content>
+        <function_name>GetAuthToken</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile display_value="Krit CC App Reg 5 default_profile">8a8073cbc3845e105f909e1d050131b6</oauth2_profile>
+        <protocol_name/>
+        <qualified_name>Start assessment [ GetAuthToken ]</qualified_name>
+        <rest_endpoint>https://dev.compliancecow.live/api/v2/oauth2/token</rest_endpoint>
+        <rest_message display_value="Start assessment">86f1ec4dc3d01ed05f909e1d050131f7</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-09 15:32:20</sys_created_on>
+        <sys_id>ba82ec2dc3a496105f909e1d0501319f</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>GetAuthToken</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_update_name>sys_rest_message_fn_ba82ec2dc3a496105f909e1d0501319f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-09 16:16:52</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

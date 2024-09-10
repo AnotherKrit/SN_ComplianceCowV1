@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_param_defs">
+    <sys_rest_message_fn_param_defs action="DELETE">
+        <name>client-secret</name>
+        <order>100</order>
+        <rest_message_function display_value="GetAuthToken">ba82ec2dc3a496105f909e1d0501319f</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_param_defs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-09 15:48:35</sys_created_on>
+        <sys_id>cc26ec29c32896105f909e1d05013107</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>client-secret</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_update_name>sys_rest_message_fn_param_defs_cc26ec29c32896105f909e1d05013107</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-09 15:48:35</sys_updated_on>
+        <value>b2FpPTBeTkczMHNJNnR0Qm0/Y01mQWtYejV2UX5vMDg=</value>
+    </sys_rest_message_fn_param_defs>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</application>
+        <file_path/>
+        <instance_id>dd163b911b16fd5c65324089bd4bcb0e</instance_id>
+        <instance_name>dev202888</instance_name>
+        <name>sys_rest_message_fn_param_defs_cc26ec29c32896105f909e1d05013107</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_param_defs"><sys_rest_message_fn_param_defs action="INSERT_OR_UPDATE"><name>client-secret</name><order>100</order><rest_message_function display_value="GetAuthToken">ba82ec2dc3a496105f909e1d0501319f</rest_message_function><sys_class_name>sys_rest_message_fn_param_defs</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-09 15:48:35</sys_created_on><sys_id>cc26ec29c32896105f909e1d05013107</sys_id><sys_mod_count>0</sys_mod_count><sys_name>client-secret</sys_name><sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package><sys_policy/><sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope><sys_update_name>sys_rest_message_fn_param_defs_cc26ec29c32896105f909e1d05013107</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-09 15:48:35</sys_updated_on><value>b2FpPTBeTkczMHNJNnR0Qm0/Y01mQWtYejV2UX5vMDg=</value></sys_rest_message_fn_param_defs></record_update>]]></payload>
+        <payload_hash>937017070</payload_hash>
+        <record_name>client-secret</record_name>
+        <reverted_from/>
+        <source>ff1269b4c3d4d6d05f909e1d05013161</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-09 15:48:35</sys_created_on>
+        <sys_id>0956a42dc32896105f909e1d0501310d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191d778f8e30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-09 15:48:35</sys_updated_on>
+        <type>HTTP Query Parameters</type>
+        <update_guid>0956ec29bd289610b8f389ee96d4af0d</update_guid>
+        <update_guid_history>0956ec29bd289610b8f389ee96d4af0d:937017070</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-09 15:54:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn_param_defs">sys_rest_message_fn_param_defs</sys_db_object>
+        <sys_id>419123f7bc2a43f382f5ca8c5e08bca1</sys_id>
+        <sys_metadata>cc26ec29c32896105f909e1d05013107</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>client-secret</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_parent display_value="GetAuthToken">ba82ec2dc3a496105f909e1d0501319f</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_scope_delete display_value="">28309376914141e08e3b135862f22410</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_param_defs_cc26ec29c32896105f909e1d05013107</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_param_defs_cc26ec29c32896105f909e1d05013107">0956a42dc32896105f909e1d0501310d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-09 15:54:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

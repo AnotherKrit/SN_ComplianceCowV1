@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map">
+    <sys_sg_action_param_map action="INSERT_OR_UPDATE">
+        <button display_value="New Button (Github Segregation of Duties)">c06aa93cc398d6d05f909e1d050131db</button>
+        <item_parameter display_value="Github Segregation of Duties type">cc6aa93cc398d6d05f909e1d050131d8</item_parameter>
+        <sys_class_name>sys_sg_action_param_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 02:34:44</sys_created_on>
+        <sys_id>c06aa93cc398d6d05f909e1d050131f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cc6aa93cc398d6d05f909e1d050131d8</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_update_name>sys_sg_action_param_map_c06aa93cc398d6d05f909e1d050131f3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 02:34:44</sys_updated_on>
+        <ui_parameter display_value="Type">486aa93cc398d6d05f909e1d050131ee</ui_parameter>
+    </sys_sg_action_param_map>
+</record_update>

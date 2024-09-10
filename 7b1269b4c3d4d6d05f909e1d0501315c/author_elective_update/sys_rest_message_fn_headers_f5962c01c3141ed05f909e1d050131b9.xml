@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers">
+    <sys_rest_message_fn_headers action="DELETE">
+        <name>Connection</name>
+        <rest_message_function display_value="Default POST">ae836c4dc3d01ed05f909e1d05013158</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_headers</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 16:17:45</sys_created_on>
+        <sys_id>f5962c01c3141ed05f909e1d050131b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Connection</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_update_name>sys_rest_message_fn_headers_f5962c01c3141ed05f909e1d050131b9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 16:17:45</sys_updated_on>
+        <value>keep-alive</value>
+    </sys_rest_message_fn_headers>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</application>
+        <file_path/>
+        <instance_id>dd163b911b16fd5c65324089bd4bcb0e</instance_id>
+        <instance_name>dev202888</instance_name>
+        <name>sys_rest_message_fn_headers_f5962c01c3141ed05f909e1d050131b9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers"><sys_rest_message_fn_headers action="INSERT_OR_UPDATE"><name>Connection</name><rest_message_function display_value="Default POST">ae836c4dc3d01ed05f909e1d05013158</rest_message_function><sys_class_name>sys_rest_message_fn_headers</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-26 16:17:45</sys_created_on><sys_id>f5962c01c3141ed05f909e1d050131b9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Connection</sys_name><sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package><sys_policy/><sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope><sys_update_name>sys_rest_message_fn_headers_f5962c01c3141ed05f909e1d050131b9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-26 16:17:45</sys_updated_on><value>keep-alive</value></sys_rest_message_fn_headers></record_update>]]></payload>
+        <payload_hash>649127906</payload_hash>
+        <record_name>Connection</record_name>
+        <reverted_from/>
+        <source>ff1269b4c3d4d6d05f909e1d05013161</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 16:17:45</sys_created_on>
+        <sys_id>88c66449c3141ed05f909e1d0501310d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1918f7aa6560000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 16:17:45</sys_updated_on>
+        <type>HTTP Headers</type>
+        <update_guid>8cc66449db141ed05b2438b6945b290c</update_guid>
+        <update_guid_history>8cc66449db141ed05b2438b6945b290c:649127906</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-02 03:35:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn_headers">sys_rest_message_fn_headers</sys_db_object>
+        <sys_id>716534357c9d48d5b3880351e76050d9</sys_id>
+        <sys_metadata>f5962c01c3141ed05f909e1d050131b9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Connection</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_scope_delete display_value="">28309376914141e08e3b135862f22410</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_headers_f5962c01c3141ed05f909e1d050131b9</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_headers_f5962c01c3141ed05f909e1d050131b9">88c66449c3141ed05f909e1d0501310d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-02 03:35:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time>1970-01-01 22:00:00</entered_time>
+        <max_drift/>
+        <name>CC Start NIST FOR AWS Assessment</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2024-09-09 14:49:52</run_start>
+        <run_time>1970-01-02 03:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[try { 
+ 	var r = new sn_ws.RESTMessageV2('x_1507800_complian.Start assessment', 'StartAssessment');
+
+	//override authentication profile 
+	//authentication type ='basic'/ 'oauth2'
+
+	r.setAuthenticationProfile('oauth2', '8a8073cbc3845e105f909e1d050131b6');
+
+	//set a MID server name if one wants to run the message on MID
+	//r.setMIDServer('MY_MID_SERVER');
+
+	//if the message is configured to communicate through ECC queue, either
+	//by setting a MID server or calling executeAsync, one needs to set skip_sensor
+	//to true. Otherwise, one may get an intermittent error that the response body is null
+	//r.setEccParameter('skip_sensor', true);
+	var gr = new GlideRecord("x_1507800_complian_assessment");
+	var assessmentId = "2abd52e0-7015-43ed-9208-62867c04ea37"; //"3ecc1b42-142b-4770-a6d6-9989942a7b0e";
+	var recExists = gr.get("id", assessmentId);
+	if (recExists)
+	{
+		var appScopeId = gr.getValue("applicationscopeid");
+		var name = gr.getValue("assessmentname") + Date.now();
+		var tags = gr.getValue("cctags");
+		var requestbody = "{ \
+           \"name\": \"" + name + "\", \
+           \"description\": \"" + name + "\", \
+           \"assessmentId\": \"" + assessmentId + "\", \
+           \"appScopeId\": \"" + appScopeId + "\", \
+           \"fromDate\": \"08/01/2024\", \
+           \"toDate\": \"08/31/2024\", \
+           \"tags\": \"" + tags + "\" \
+       }";
+   
+       r.setRequestHeader("Content-Type","application/json");
+       r.setRequestHeader("Accept","application/json");
+       r.setRequestBody(requestbody);
+   
+       var response = r.execute();
+       var responseBody = response.getBody();
+       var httpStatusCode = response.getStatusCode();
+       //gs.debug("Status code :" + httpStatusCode);
+	   var grAssStatus = new GlideRecord("x_1507800_complian_assessment_stat");
+		grAssStatus.initialize();
+	   if (httpStatusCode == 200 || httpStatusCode == 201){
+			response_json = JSON.parse(responseBody);
+			var assessment_run_id = response_json.id;
+			//gs.debug("Assessment run id: " + assessment_run_id);
+			
+			grAssStatus.setValue("assessment_id", gr.getUniqueValue());
+			grAssStatus.setValue("assessment_run_id", assessment_run_id);
+			//grAssStatus.setValue("started_time",response_json.get("started_time") );
+			grAssStatus.setValue("request_status", "Started");
+			//gs.debug("Assessment Started");
+			//gs.debug("Assessment run id: " + assessment_run_id);
+	   }
+	   else {
+			//grAssStatus.setValue("response_error_message", gr.getUniqueValue());
+			//grAssStatus.setValue("response_status_code", gr.getUniqueValue());
+			//gs.debug("Assessment Error Status code : " + httpStatusCode);
+			//gs.debug("Assessment Error : " + responseBody);
+	   }
+	   grAssStatus.insert();
+	}
+	else{
+		//gs.debug("Assessment record not found");
+		//Workflow to generate an email
+	}
+		
+}
+catch(ex) {
+ var message = ex.message;
+ gs.debug(message);
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-09 16:19:50</sys_created_on>
+        <sys_id>c5e898a5c3a096105f909e1d050131ef</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>CC Start NIST FOR AWS Assessment</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_update_name>sysauto_script_c5e898a5c3a096105f909e1d050131ef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-09 20:52:24</sys_updated_on>
+        <time_zone>US/Eastern</time_zone>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>c5e898a5c3a096105f909e1d050131ef</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-09 16:19:50</sys_created_on>
+        <sys_id>f27dacedc3a896105f909e1d05013153</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-09 16:19:50</sys_updated_on>
+        <table>sysauto_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

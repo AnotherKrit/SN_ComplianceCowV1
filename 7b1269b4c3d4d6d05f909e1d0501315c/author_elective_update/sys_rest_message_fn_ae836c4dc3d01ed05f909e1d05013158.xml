@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="DELETE">
+        <authentication_type>oauth2</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>Default POST</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile display_value="Krit CC App Reg 5 default_profile">8a8073cbc3845e105f909e1d050131b6</oauth2_profile>
+        <protocol_name/>
+        <qualified_name>Start assessment [ Default POST ]</qualified_name>
+        <rest_endpoint>https://phoenix.dev.compliancecow.live/api/v1/customer/runs</rest_endpoint>
+        <rest_message display_value="Start assessment">86f1ec4dc3d01ed05f909e1d050131f7</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 16:04:32</sys_created_on>
+        <sys_id>ae836c4dc3d01ed05f909e1d05013158</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Default POST</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_update_name>sys_rest_message_fn_ae836c4dc3d01ed05f909e1d05013158</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 17:55:12</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</application>
+        <file_path/>
+        <instance_id>dd163b911b16fd5c65324089bd4bcb0e</instance_id>
+        <instance_name>dev202888</instance_name>
+        <name>sys_rest_message_fn_ae836c4dc3d01ed05f909e1d05013158</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>oauth2</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>Default POST</function_name><http_method>post</http_method><lock>false</lock><oauth2_profile display_value="Krit CC App Reg 5 default_profile">8a8073cbc3845e105f909e1d050131b6</oauth2_profile><protocol_name/><qualified_name>Start assessment [ Default POST ]</qualified_name><rest_endpoint>https://phoenix.dev.compliancecow.live/api/v1/customer/runs</rest_endpoint><rest_message display_value="Start assessment">86f1ec4dc3d01ed05f909e1d050131f7</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-26 16:04:32</sys_created_on><sys_id>ae836c4dc3d01ed05f909e1d05013158</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Default POST</sys_name><sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package><sys_policy/><sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope><sys_update_name>sys_rest_message_fn_ae836c4dc3d01ed05f909e1d05013158</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-26 17:55:12</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+        <payload_hash>-663116099</payload_hash>
+        <record_name>Default POST</record_name>
+        <reverted_from/>
+        <source>ff1269b4c3d4d6d05f909e1d05013161</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 17:55:13</sys_created_on>
+        <sys_id>e30dfcc5c39c1ed05f909e1d050131ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1918fd3dfe30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 17:55:13</sys_updated_on>
+        <type>HTTP Method</type>
+        <update_guid>2b0dfcc5069c1ed0dbeaca315bb2bee9</update_guid>
+        <update_guid_history>2b0dfcc5069c1ed0dbeaca315bb2bee9:-663116099,88c6644961141ed03679a9a0a9977642:2092554631,1ab3604114141ed0aa119ae7726ff680:-663116099</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-02 03:35:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn">sys_rest_message_fn</sys_db_object>
+        <sys_id>eb57fcaaa53b4681943e1da90c26c2a9</sys_id>
+        <sys_metadata>ae836c4dc3d01ed05f909e1d05013158</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default POST</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_parent display_value="Start assessment">86f1ec4dc3d01ed05f909e1d050131f7</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_scope_delete display_value="">28309376914141e08e3b135862f22410</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_ae836c4dc3d01ed05f909e1d05013158</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_ae836c4dc3d01ed05f909e1d05013158">e30dfcc5c39c1ed05f909e1d050131ea</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-02 03:35:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

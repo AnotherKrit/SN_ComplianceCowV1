@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="DELETE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>POST</http_method>
+        <name>AssessmentCompletedNotification</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	
+    // implement resource here
+	gs.info(request.body.data);
+	
+	response.setBody(request.body.data);
+	
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1507800_complian/compliancecowcallback/assessment-completion-notification</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/assessment-completion-notification</relative_path>
+        <request_example/>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>false</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 18:56:16</sys_created_on>
+        <sys_id>8f641a19c39856145f909e1d050131fa</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>AssessmentCompletedNotification</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_update_name>sys_ws_operation_8f641a19c39856145f909e1d050131fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 19:31:38</sys_updated_on>
+        <web_service_definition display_value="ComplianceCowCallback">7f245695c39856145f909e1d050131f3</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+    <sys_es_latest_script action="DELETE">
+        <id>8f641a19c39856145f909e1d050131fa</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 18:56:16</sys_created_on>
+        <sys_id>6f941e15c39856145f909e1d0501311e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 18:56:16</sys_updated_on>
+        <table>sys_ws_operation</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</application>
+        <file_path/>
+        <instance_id>dd163b911b16fd5c65324089bd4bcb0e</instance_id>
+        <instance_name>dev202888</instance_name>
+        <name>sys_ws_operation_8f641a19c39856145f909e1d050131fa</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;&lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;consumes&gt;application/json,application/xml,text/xml&lt;/consumes&gt;&lt;consumes_customized&gt;false&lt;/consumes_customized&gt;&lt;default_operation_uri/&gt;&lt;enforce_acl/&gt;&lt;http_method&gt;POST&lt;/http_method&gt;&lt;name&gt;AssessmentCompletedNotification&lt;/name&gt;&lt;operation_script&gt;&lt;![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	
+    // implement resource here
+	gs.info(request.body.data);
+	
+	response.setBody(request.body.data);
+	
+})(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/x_1507800_complian/compliancecowcallback/assessment-completion-notification&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/assessment-completion-notification&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;false&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;false&lt;/requires_authentication&gt;&lt;requires_snc_internal_role&gt;false&lt;/requires_snc_internal_role&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-27 18:56:16&lt;/sys_created_on&gt;&lt;sys_id&gt;8f641a19c39856145f909e1d050131fa&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;AssessmentCompletedNotification&lt;/sys_name&gt;&lt;sys_package display_value="ComplianceCowV1" source="x_1507800_complian"&gt;7b1269b4c3d4d6d05f909e1d0501315c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="ComplianceCowV1"&gt;7b1269b4c3d4d6d05f909e1d0501315c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_8f641a19c39856145f909e1d050131fa&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-27 19:31:38&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="ComplianceCowCallback"&gt;7f245695c39856145f909e1d050131f3&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;8f641a19c39856145f909e1d050131fa&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-27 18:56:16&lt;/sys_created_on&gt;&lt;sys_id&gt;6f941e15c39856145f909e1d0501311e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-27 18:56:16&lt;/sys_updated_on&gt;&lt;table&gt;sys_ws_operation&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-756927149</payload_hash>
+        <record_name>AssessmentCompletedNotification</record_name>
+        <reverted_from/>
+        <source>ff1269b4c3d4d6d05f909e1d05013161</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 19:31:38</sys_created_on>
+        <sys_id>79bc5211c3dc56145f909e1d05013136</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191955282b80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 19:31:38</sys_updated_on>
+        <type>Scripted REST Resource</type>
+        <update_guid>71bc9e15769c56147aa699ced9efcbc3</update_guid>
+        <update_guid_history>71bc9e15769c56147aa699ced9efcbc3:-756927149,ed7c5e15fb9c5614a84f83463020c5e1:1751995443,040c1a11d99c5614d2d266629ba5fb41:-1438264474,cf7b1e15dc9c561407459e16e0f50356:-733933335,32fa529dd95c5614aaed45a49aa95cea:-1740682385,cbba1ad1e55c561459d71aee34569342:430268750,fea89299721c5614f21d4aab01633e0b:-1451172018,c1e4d2554a985614fbf93ee95f635a7f:-1860496290,339456999e9856149197c3ea43eb3b58:-415699304</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-03 03:14:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_ws_operation">sys_ws_operation</sys_db_object>
+        <sys_id>737f6355c55246568db38d9f3d9a7b64</sys_id>
+        <sys_metadata>8f641a19c39856145f909e1d050131fa</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AssessmentCompletedNotification</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_scope_delete display_value="">28309376914141e08e3b135862f22410</sys_scope_delete>
+        <sys_update_name>sys_ws_operation_8f641a19c39856145f909e1d050131fa</sys_update_name>
+        <sys_update_version display_value="sys_ws_operation_8f641a19c39856145f909e1d050131fa">79bc5211c3dc56145f909e1d05013136</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-03 03:14:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

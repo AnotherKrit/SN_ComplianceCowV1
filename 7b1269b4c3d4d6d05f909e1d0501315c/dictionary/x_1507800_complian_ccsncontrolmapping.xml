@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="08bd9748c32452585f909e1d050131d1" label="CCSNControlMapping" max_length="40" name="x_1507800_complian_ccsncontrolmapping" type="collection">
+        <element label="CCControlId" max_length="40" name="cccontrolid" type="string"/>
+        <element label="SNControlName" max_length="40" name="sncontrolname" type="string"/>
+        <element label="AssessmentId" max_length="40" name="assessmentid" type="string"/>
+        <element label="SNControlId" max_length="40" name="sncontrolid" type="string"/>
+    </element>
+</database>
