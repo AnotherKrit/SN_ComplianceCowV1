@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1507800_complian.ComplianceCowConstants</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>ComplianceCowConstants</name>
+        <script><![CDATA[var ComplianceCowConstants = Class.create();
+ComplianceCowConstants.prototype = {
+    initialize: function() {
+    },
+	//Properties
+	ASSESSMENT_IDS: {
+        NIST_CSF: "e5b6aff3-f6e0-4e90-bbe5-6ddc5332b46a",
+        GITHUB_SEG_DUTIES: "3ecc1b42-142b-4770-a6d6-9989942a7b0e"
+    },
+
+    SCHEDULED_JOBS: {
+        SCHEDULED_ASSESSMENT_START : 'CC Start NIST FOR AWS Assessment'
+    },
+    SCRIPTS: {
+        INDICATOR_UTIL: 'x_1507800_complian.ComplianceCowIndicatorUtil'
+    },
+
+    OAUTH_PROFILE_ID: "8a8073cbc3845e105f909e1d050131b6",
+
+    TABLES: {
+        ASSESSMENT: 'x_1507800_complian_assessment',
+        ASSESSMENT_STATUS: 'x_1507800_complian_assessment_stat',
+        EVIDENCE_DATA: 'x_1507800_complian_cc_evidence_data',
+        EVIDENCE_FILE: 'x_1507800_complian_cc_evidence_reference',
+		EVIDENCE_URL: 'x_1507800_complian_compliancecow_evidence_url',
+        EVIDENCE_CONTROL_MAPPING: 'x_1507800_complian_ccsncontrolmapping',
+        AWS_RESOURCES: 'x_1507800_complian_ccawsresources'
+    },
+
+    DATA_SOURCES: {
+        AWS_RESOURCES: 'ComplianceCow Aws Resources DS'
+    },
+
+    IMPORT_TABLES: {
+        EVIDENCE_DATA: 'x_1507800_complian_cc_evidence_data_import',
+        EVIDENCE_FILE: 'x_1507800_complian_cc_evidence_file_import',
+        AWS_RESOURCES: 'x_1507800_complian_cc_aws_resources_import'
+    },
+
+    TRANSFORM_MAPS: {
+        EVIDENCE_DATA: 'CC Evidence Data Transform',
+        EVIDENCE_FILE: "CC Evidence File Transform",
+        AWS_RESOURCES: 'ComplianceCow Aws Resources Transform'
+    },
+
+    INBOUND_REST_APIS: {
+        EVIDENCE_DATA: "/api/x_1507800_complian/v1/ccevidencedata/transform_evidence_data"
+    },
+
+    OUTBOUND_REST_APIS: {
+        START_ASSESSMENT: {"NAME": "x_1507800_complian.Start assessment", "METHOD_NAME": "StartAssessment"}
+    },
+
+        // Availability types based on type field in service_availability table
+    AVAIL_TYPES: {
+        ANNUALLY: 'annually',
+        MONTHLY: 'monthly',
+        WEEKLY: 'weekly',
+        DAILY: 'daily',
+        LAST_12_MONTHS: 'last12months',
+        LAST_30_DAYS: 'last30days',
+        LAST_7_DAYS: 'last7days',
+        FIXED: ['annually', 'monthly', 'weekly', 'daily'],
+        ROLLING: ['last12months', 'last30days', 'last7days']
+    },
+
+    DURATIONS: {
+        LAST_12_MONTHS: 12,
+        LAST_30_DAYS: 30,
+        LAST_7_DAYS: 7
+    },
+
+    type: 'ComplianceCowConstants'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-11 22:06:39</sys_created_on>
+        <sys_id>aedf4452c324da505f909e1d050131ca</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ComplianceCowConstants</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_update_name>sys_script_include_aedf4452c324da505f909e1d050131ca</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-12 21:20:34</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>aedf4452c324da505f909e1d050131ca</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-11 22:06:39</sys_created_on>
+        <sys_id>ea00949ac3e0da505f909e1d05013171</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-11 22:06:39</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

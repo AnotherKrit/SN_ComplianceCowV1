@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="sncontrolid" label="SNControlId" language="en" table="x_1507800_complian_ccsncontrolmapping">
+    <sys_documentation element="assessmentid" label="AssessmentId" language="en" table="x_1507800_complian_cc_evidence_url_import">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>sncontrolid</element>
+            <element>assessmentid</element>
             <help/>
             <hint/>
-            <label>SNControlId</label>
+            <label>AssessmentId</label>
             <language>en</language>
-            <name>x_1507800_complian_ccsncontrolmapping</name>
-            <plural>SNControlIds</plural>
+            <name>x_1507800_complian_cc_evidence_url_import</name>
+            <plural>AssessmentIds</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-09-05 13:50:56</sys_created_on>
+            <sys_created_on>2024-09-12 13:32:20</sys_created_on>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>SNControlId</sys_name>
+            <sys_name>AssessmentId</sys_name>
             <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
             <sys_policy/>
             <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
-            <sys_update_name>sys_documentation_x_1507800_complian_ccsncontrolmapping_sncontrolid_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_1507800_complian_cc_evidence_url_import_assessmentid_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-09-05 13:50:56</sys_updated_on>
+            <sys_updated_on>2024-09-12 13:32:20</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

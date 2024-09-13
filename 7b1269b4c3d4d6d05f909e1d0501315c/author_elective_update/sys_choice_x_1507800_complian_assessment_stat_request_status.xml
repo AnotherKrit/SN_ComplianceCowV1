@@ -53,5 +53,24 @@
             <sys_updated_on>2024-08-26 17:31:20</sys_updated_on>
             <value>Started</value>
         </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>request_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Failed</label>
+            <language>en</language>
+            <name>x_1507800_complian_assessment_stat</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-12 14:20:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-12 14:20:28</sys_updated_on>
+            <value>Failed</value>
+        </sys_choice>
     </sys_choice>
 </record_update>

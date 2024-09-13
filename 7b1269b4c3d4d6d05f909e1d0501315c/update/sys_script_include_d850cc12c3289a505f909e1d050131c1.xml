@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1507800_complian.ComplianceCowIndicatorUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>ComplianceCowIndicatorUtil</name>
+        <script><![CDATA[var ComplianceCowIndicatorUtil = Class.create();
+
+//Process indicators which has both item and profile
+ComplianceCowIndicatorUtil.prototype = {
+    initialize: function() {
+        this.assessment_id = "";
+        this.primaryevidencename = "";
+        this.ccConstScript = new ComplianceCowConstants();
+    },
+
+    assignAssessmentEvidenceforControl: function(control, indicator_template_id) {
+        var ctl_obj = control.content;
+        while (ctl_obj != null && ctl_obj.active){
+            var gr_ctl_mapping = new GlideRecord(this.ccConstScript.TABLES.EVIDENCE_CONTROL_MAPPING); 
+			//gr_ctl_mapping.addQuery('assessmentid', assessmentno);
+            gr_ctl_mapping.addQuery('indicatortempateid', indicator_template_id);  
+			gr_ctl_mapping.addQuery('sncontrolobjective', ctl_obj.sys_id);  
+            gr_ctl_mapping.query();
+            if (gr_ctl_mapping.next()){
+                this.assessment_id  = gr_ctl_mapping.assessmentid;
+                this.primaryevidencename = gr_ctl_mapping.primaryevidencename;
+                break;
+            }
+            else{
+                gr_ctl_mapping = null;
+            }
+        }
+    },
+
+    getLatestAssessmentRecord: function(){
+        var gr_record = new GlideAggregate(this.ccConstScript.TABLES.ASSESSMENT_STATUS);
+        var max_ass_time = null;
+
+        gr_record.addQuery('assessment_id', this.assessment_id);
+        gr_record.addAggregate('MAX', 'started_time');
+		gr_record.groupBy('assessment_id');
+        gr_record.query();
+        if (gr_record.next())
+        {
+            max_ass_time = gr_record.getAggregate('MAX', 'started_time');
+            var gr = new GlideRecord(this.ccConstScript.TABLES.ASSESSMENT_STATUS);
+            gr.addQuery('assessment_id', this.assessment_id);
+            gr.addQuery('started_time', max_ass_time);
+			gr.query();
+            if (gr.next())
+                return gr;
+            else
+                return null;
+        }
+        else{
+            return null;
+        }    
+    },
+
+    getLatestEvidenceRunId: function(){
+        var gaEvidence = new GlideAggregate(this.ccConstScript.TABLES.EVIDENCE_DATA);
+        var max_evidence_time = null;
+        gaEvidence.addQuery('evidencefilename', this.primary_evidencename);
+        gaEvidence.addQuery('assessmentid', this.assessment_id);
+        gaEvidence.addAggregate('MAX', 'assessmenttime');
+		gaEvidence.groupBy('assessmentid');
+		gaEvidence.groupBy('evidencefilename');
+        gaEvidence.query();
+        if (gaEvidence.next())
+            max_evidence_time = gaEvidence.getAggregate('MAX', 'assessmenttime');
+			if (max_evidence_time != null)
+			{
+				var gr_record = new GlideRecord(this.ccConstScript.TABLES.EVIDENCE_DATA);
+				gr_record.addQuery('assessmentid', this.assessment_id);
+				gr_record.addQuery('evidencefilename', this.primary_evidencename);
+				gr_record.addQuery('assessmenttime', max_evidence_time);
+				gr_record.setLimit(1);
+				gr_record.query();
+
+				if (gr_record.next())
+					return gr_record.assessmentrunid;
+				else
+					return null;			
+			}
+        return null;
+    },
+
+    getLatestEvidenceRecord: function(assessment_run_id, resource_id, resource_name ){
+        var gr_record = new GlideRecord(this.ccConstScript.TABLES.EVIDENCE_DATA);
+        gr_record.addQuery('assessmentid', this.assessment_id);
+        gr_record.addQuery('evidencefilename', this.primary_evidencename);
+        gr_record.addQuery('assessmentrunid', assessment_run_id);
+        if (resource_id != '')
+            gr_record.addQuery('resourceid', resource_id);
+        else
+            gr_record.addQuery('resourcename', resource_name);
+        gr_record.query();
+
+        if (gr_record.next())
+            return gr_record;
+        else
+            return null;
+    },
+
+	getSupportingEvidenceLinkId: function(assessment_run_id){
+		var gr_record = new GlideRecord(this.ccConstScript.TABLES.EVIDENCE_URL);
+        gr_record.addQuery('assessmentid', this.assessment_id);
+        gr_record.addQuery('evidencename', this.primary_evidencename);
+        gr_record.addQuery('assessmentrunid', assessment_run_id);
+        gr_record.query();
+
+        if (gr_record.next())
+            return gr_record.sys_id;
+        else
+            return null;
+	
+	},
+
+    performIndicatorCheck: function(control, indicator_template_id){
+		var output = {
+			passed: null,
+			value: null,
+			supportingDataIds:[]
+		};
+
+		this.assignAssessmentEvidenceforControl(gr, null);
+		var assessment_rec = this.getLatestAssessmentRecord();
+		var latest_assessment_run_id = this.getLatestEvidenceRunId();
+		if (assessment_rec == null || latest_assessment_run_id == null)
+		{
+			//Do some action..send email
+			return output;
+		}
+			
+		if (assessment_rec.assessment_run_id != latest_assessment_run_id) {
+			if (assessment_rec.request_status != "Started"){
+				//Do some action..send email
+				return output;
+			}
+			else {
+				//Do some action..send email
+				return output;
+			}
+		}
+				
+		var ci = control.profile.applies_to;  //configuration item
+		var resource_id = ci.resourceid;
+		var resource_name = ci.resourcename;
+		var evidence_rec = this.getLatestEvidenceRecord( latest_assessment_run_id, resource_id, resource_name);
+		if (evidence_rec != null){
+			var evidence_urlrec = this.getSupportingEvidenceLinkId(latest_assessment_run_id);
+			output.value = 500;
+			output.supportingDataIds = evidence_urlrec
+			if (evidence_rec.compliancestatus == cc_consts.COMPLIANCE_STATUS.COMPLIANT) {
+				output.passed = true;
+			}
+			else if (evidence_rec.compliancestatus == cc_consts.COMPLIANCE_STATUS.NON_COMPLIANT){
+				output.passed = false;
+			}
+		}
+		//evidence_rec is null or compliancestatus is NOT_DETERMINED.. return output with null values
+		return output; 
+	},
+
+    type: 'ComplianceCowIndicatorUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-11 20:58:47</sys_created_on>
+        <sys_id>d850cc12c3289a505f909e1d050131c1</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>ComplianceCowIndicatorUtil</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_update_name>sys_script_include_d850cc12c3289a505f909e1d050131c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-13 01:38:49</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>d850cc12c3289a505f909e1d050131c1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-11 20:58:47</sys_created_on>
+        <sys_id>a48040dac3a09a505f909e1d050131fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-11 20:58:47</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

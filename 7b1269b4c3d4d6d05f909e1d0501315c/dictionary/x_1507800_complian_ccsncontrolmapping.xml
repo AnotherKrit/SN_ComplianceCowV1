@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="08bd9748c32452585f909e1d050131d1" label="CCSNControlMapping" max_length="40" name="x_1507800_complian_ccsncontrolmapping" type="collection">
         <element label="CCControlId" max_length="40" name="cccontrolid" type="string"/>
-        <element label="SNControlName" max_length="40" name="sncontrolname" type="string"/>
         <element label="AssessmentId" max_length="40" name="assessmentid" type="string"/>
-        <element label="SNControlId" max_length="40" name="sncontrolid" type="string"/>
+        <element label="SNControlObjective" max_length="32" name="sncontrolobjective" reference="sn_compliance_policy_statement" type="reference"/>
+        <element label="PrimaryEvidenceName" max_length="40" name="primaryevidencename" type="string"/>
+        <element label="IndicatorTempateId" max_length="32" name="indicatortempateid" reference="sn_grc_indicator_template" type="reference"/>
+        <index name="index">
+            <element name="indicatortempateid"/>
+        </index>
+        <index name="index2">
+            <element name="sncontrolobjective"/>
+        </index>
     </element>
 </database>

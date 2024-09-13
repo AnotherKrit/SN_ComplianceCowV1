@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list action="DELETE" parent="" relationship="" sys_domain="global" table="x_1507800_complian_compliance_cow_evidence_url" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assessmentid</element>
+            <list_id display_value="x_1507800_complian_compliance_cow_evidence_url" element="NULL" name="x_1507800_complian_compliance_cow_evidence_url" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">68de8966c3e016905f909e1d050131f3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-12 21:19:25</sys_created_on>
+            <sys_id>ecde0d66c3e016905f909e1d050131b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-12 21:19:25</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assessmentrunid</element>
+            <list_id display_value="x_1507800_complian_compliance_cow_evidence_url" element="NULL" name="x_1507800_complian_compliance_cow_evidence_url" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">68de8966c3e016905f909e1d050131f3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-12 21:19:25</sys_created_on>
+            <sys_id>e4de0d66c3e016905f909e1d050131b6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-12 21:19:25</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assessmenttime</element>
+            <list_id display_value="x_1507800_complian_compliance_cow_evidence_url" element="NULL" name="x_1507800_complian_compliance_cow_evidence_url" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">68de8966c3e016905f909e1d050131f3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-12 21:19:25</sys_created_on>
+            <sys_id>e8de0d66c3e016905f909e1d050131b6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-12 21:19:25</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>evidencename</element>
+            <list_id display_value="x_1507800_complian_compliance_cow_evidence_url" element="NULL" name="x_1507800_complian_compliance_cow_evidence_url" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">68de8966c3e016905f909e1d050131f3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-12 21:19:25</sys_created_on>
+            <sys_id>ecde0d66c3e016905f909e1d050131b6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-12 21:19:25</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>evidenceurl</element>
+            <list_id display_value="x_1507800_complian_compliance_cow_evidence_url" element="NULL" name="x_1507800_complian_compliance_cow_evidence_url" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">68de8966c3e016905f909e1d050131f3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-12 21:19:25</sys_created_on>
+            <sys_id>e0de0d66c3e016905f909e1d050131b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-12 21:19:25</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_1507800_complian_compliance_cow_evidence_url</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-12 21:19:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>68de8966c3e016905f909e1d050131f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1507800_complian_compliance_cow_evidence_url</sys_name>
+            <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+            <sys_update_name>sys_ui_list_x_1507800_complian_compliance_cow_evidence_url_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-12 21:19:25</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</application>
+        <file_path/>
+        <instance_id>dd163b911b16fd5c65324089bd4bcb0e</instance_id>
+        <instance_name>dev202888</instance_name>
+        <name>sys_ui_list_x_1507800_complian_compliance_cow_evidence_url_null</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="x_1507800_complian_compliance_cow_evidence_url" version="2" view=""><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>assessmentid</element><list_id display_value="x_1507800_complian_compliance_cow_evidence_url" element="NULL" name="x_1507800_complian_compliance_cow_evidence_url" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">68de8966c3e016905f909e1d050131f3</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-12 21:19:25</sys_created_on><sys_id>ecde0d66c3e016905f909e1d050131b5</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-12 21:19:25</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>assessmentrunid</element><list_id display_value="x_1507800_complian_compliance_cow_evidence_url" element="NULL" name="x_1507800_complian_compliance_cow_evidence_url" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">68de8966c3e016905f909e1d050131f3</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-12 21:19:25</sys_created_on><sys_id>e4de0d66c3e016905f909e1d050131b6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-12 21:19:25</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>assessmenttime</element><list_id display_value="x_1507800_complian_compliance_cow_evidence_url" element="NULL" name="x_1507800_complian_compliance_cow_evidence_url" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">68de8966c3e016905f909e1d050131f3</list_id><max_value>false</max_value><min_value>false</min_value><position>2</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-12 21:19:25</sys_created_on><sys_id>e8de0d66c3e016905f909e1d050131b6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-12 21:19:25</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>evidencename</element><list_id display_value="x_1507800_complian_compliance_cow_evidence_url" element="NULL" name="x_1507800_complian_compliance_cow_evidence_url" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">68de8966c3e016905f909e1d050131f3</list_id><max_value>false</max_value><min_value>false</min_value><position>3</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-12 21:19:25</sys_created_on><sys_id>ecde0d66c3e016905f909e1d050131b6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-12 21:19:25</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>evidenceurl</element><list_id display_value="x_1507800_complian_compliance_cow_evidence_url" element="NULL" name="x_1507800_complian_compliance_cow_evidence_url" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">68de8966c3e016905f909e1d050131f3</list_id><max_value>false</max_value><min_value>false</min_value><position>4</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-12 21:19:25</sys_created_on><sys_id>e0de0d66c3e016905f909e1d050131b7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-12 21:19:25</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>x_1507800_complian_compliance_cow_evidence_url</name><parent/><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-12 21:19:25</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>68de8966c3e016905f909e1d050131f3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1507800_complian_compliance_cow_evidence_url</sys_name><sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package><sys_policy/><sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope><sys_update_name>sys_ui_list_x_1507800_complian_compliance_cow_evidence_url_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-12 21:19:25</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+        <payload_hash>140982420</payload_hash>
+        <record_name>Compliance Cow Evidence URL</record_name>
+        <reverted_from/>
+        <source>15f4b279c3e052505f909e1d05013142</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-12 21:19:25</sys_created_on>
+        <sys_id>2cde0d66c3e016905f909e1d050131b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191e81af0c00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-12 21:19:25</sys_updated_on>
+        <type>List Layout</type>
+        <update_guid>e8de0d663ae01690a60fa8a3553c00b9</update_guid>
+        <update_guid_history>e8de0d663ae01690a60fa8a3553c00b9:140982420</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-12 21:19:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list">sys_ui_list</sys_db_object>
+        <sys_id>49f23f20998145179d596fd7e2a36a11</sys_id>
+        <sys_metadata>68de8966c3e016905f909e1d050131f3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1507800_complian_compliance_cow_evidence_url</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_parent display_value="">b3016bd6c36052905f909e1d05013110</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_scope_delete display_value="">28309376914141e08e3b135862f22410</sys_scope_delete>
+        <sys_update_name>sys_ui_list_x_1507800_complian_compliance_cow_evidence_url_null</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_x_1507800_complian_compliance_cow_evidence_url_null">2cde0d66c3e016905f909e1d050131b9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-12 21:19:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

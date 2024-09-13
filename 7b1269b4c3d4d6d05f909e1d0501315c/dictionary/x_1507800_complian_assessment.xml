@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="1d10380dc3141ed05f909e1d05013101" label="CC Assessment" max_length="40" name="x_1507800_complian_assessment" type="collection">
-        <element label="ApplicationScopeId" max_length="40" name="applicationscopeid" type="string"/>
-        <element label="ApplicationScopeName" max_length="40" name="applicationscopename" type="string"/>
-        <element label="AssessmentId" max_length="40" name="id" type="string"/>
-        <element label="AssessmentName" max_length="40" name="assessmentname" type="string"/>
+        <element label="ApplicationScopeId" max_length="50" name="applicationscopeid" type="string"/>
+        <element label="ApplicationScopeName" max_length="200" name="applicationscopename" type="string"/>
+        <element label="AssessmentId" max_length="50" name="id" type="string"/>
+        <element label="AssessmentName" max_length="200" name="assessmentname" type="string"/>
         <element label="CCTags" max_length="40" name="tags" type="string"/>
     </element>
 </database>

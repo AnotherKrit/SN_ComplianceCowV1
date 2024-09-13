@@ -13,9 +13,9 @@
         <element label="id" max_length="40" name="id" type="string"/>
         <element label="ActionStatus" max_length="40" name="actionstatus" type="string"/>
         <element label="ResourceLocation" max_length="40" name="resourcelocation" type="string"/>
-        <element label="AssessmentTime" max_length="40" name="assessmenttime" type="glide_date_time"/>
+        <element label="AssessmentRunStartTime" max_length="40" name="assessmenttime" type="glide_date_time"/>
         <element label="AssessmentId" max_length="40" name="assessmentid" type="string"/>
-        <element label="EvaluatedTime" max_length="40" name="evaluatedtime" type="glide_date_time"/>
+        <element label="EvaluationTime" max_length="40" name="evaluatedtime" type="glide_date_time"/>
         <element label="RemediationSteps" max_length="40" name="remediationstepsuseraction" type="string"/>
         <element label="OtherFields" max_length="4000" name="otherfields" type="simple_name_values"/>
         <element label="CCControlId" max_length="40" name="cccontrolid" type="string"/>
