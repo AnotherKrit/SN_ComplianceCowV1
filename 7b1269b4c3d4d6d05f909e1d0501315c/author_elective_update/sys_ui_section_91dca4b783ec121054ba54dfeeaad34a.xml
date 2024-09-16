@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="" section_id="91dca4b783ec121054ba54dfeeaad34a" sys_domain="global" table="x_1507800_complian_cc_control_objectives_import" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_name</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-16 16:03:20</sys_created_on>
+            <sys_id>99dc28f783ec121054ba54dfeeaad395</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-16 16:03:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reference</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-16 16:03:20</sys_created_on>
+            <sys_id>15dc28f783ec121054ba54dfeeaad396</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-16 16:03:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>main</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-16 16:03:20</sys_created_on>
+            <sys_id>99dc28f783ec121054ba54dfeeaad396</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-16 16:03:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-16 16:03:20</sys_created_on>
+            <sys_id>11dc28f783ec121054ba54dfeeaad397</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-16 16:03:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-16 16:03:20</sys_created_on>
+            <sys_id>95dc28f783ec121054ba54dfeeaad397</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-16 16:03:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-16 16:03:20</sys_created_on>
+            <sys_id>1ddc28f783ec121054ba54dfeeaad397</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-16 16:03:20</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>has_downstream_controls</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-16 16:03:20</sys_created_on>
+            <sys_id>91dc28f783ec121054ba54dfeeaad398</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-16 16:03:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>creates_controls_automatically</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-16 16:03:20</sys_created_on>
+            <sys_id>19dc28f783ec121054ba54dfeeaad398</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-16 16:03:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>create_control_requirements</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-16 16:03:20</sys_created_on>
+            <sys_id>9ddc28f783ec121054ba54dfeeaad398</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-16 16:03:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_main</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-16 16:03:20</sys_created_on>
+            <sys_id>15dc28f783ec121054ba54dfeeaad399</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-16 16:03:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_active</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-16 16:03:20</sys_created_on>
+            <sys_id>99dc28f783ec121054ba54dfeeaad399</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-16 16:03:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-16 16:03:20</sys_created_on>
+            <sys_id>11dc28f783ec121054ba54dfeeaad39a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-16 16:03:20</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_reference</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-16 16:03:20</sys_created_on>
+            <sys_id>95dc28f783ec121054ba54dfeeaad39a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-16 16:03:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_creates_cont__automatically</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-16 16:03:20</sys_created_on>
+            <sys_id>1ddc28f783ec121054ba54dfeeaad39a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-16 16:03:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_create_control_requirements</element>
+            <position>14</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-16 16:03:20</sys_created_on>
+            <sys_id>91dc28f783ec121054ba54dfeeaad39b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-16 16:03:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_has_downstream_controls</element>
+            <position>15</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-16 16:03:20</sys_created_on>
+            <sys_id>19dc28f783ec121054ba54dfeeaad39b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-16 16:03:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>16</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-16 16:03:20</sys_created_on>
+            <sys_id>9ddc28f783ec121054ba54dfeeaad39b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-16 16:03:20</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption/>
+            <header>false</header>
+            <name>x_1507800_complian_cc_control_objectives_import</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-16 16:03:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>91dca4b783ec121054ba54dfeeaad34a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1507800_complian_cc_control_objectives_import</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+            <sys_update_name>sys_ui_section_91dca4b783ec121054ba54dfeeaad34a</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-16 16:03:19</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</application>
+        <file_path/>
+        <instance_id>a8d68ea3dbc6fd14ebdd2a5913961911</instance_id>
+        <instance_name>dev197481</instance_name>
+        <name>sys_ui_section_91dca4b783ec121054ba54dfeeaad34a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="91dca4b783ec121054ba54dfeeaad34a" sys_domain="global" table="x_1507800_complian_cc_control_objectives_import" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>u_name</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-16 16:03:20</sys_created_on><sys_id>99dc28f783ec121054ba54dfeeaad395</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-16 16:03:20</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>reference</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-16 16:03:20</sys_created_on><sys_id>15dc28f783ec121054ba54dfeeaad396</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-16 16:03:20</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>main</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-16 16:03:20</sys_created_on><sys_id>99dc28f783ec121054ba54dfeeaad396</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-16 16:03:20</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>active</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-16 16:03:20</sys_created_on><sys_id>11dc28f783ec121054ba54dfeeaad397</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-16 16:03:20</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>name</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-16 16:03:20</sys_created_on><sys_id>95dc28f783ec121054ba54dfeeaad397</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-16 16:03:20</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-16 16:03:20</sys_created_on><sys_id>1ddc28f783ec121054ba54dfeeaad397</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-16 16:03:20</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>has_downstream_controls</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-16 16:03:20</sys_created_on><sys_id>91dc28f783ec121054ba54dfeeaad398</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-16 16:03:20</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>creates_controls_automatically</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-16 16:03:20</sys_created_on><sys_id>19dc28f783ec121054ba54dfeeaad398</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-16 16:03:20</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>create_control_requirements</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-16 16:03:20</sys_created_on><sys_id>9ddc28f783ec121054ba54dfeeaad398</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-16 16:03:20</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_main</element><position>9</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-16 16:03:20</sys_created_on><sys_id>15dc28f783ec121054ba54dfeeaad399</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-16 16:03:20</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_active</element><position>10</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-16 16:03:20</sys_created_on><sys_id>99dc28f783ec121054ba54dfeeaad399</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-16 16:03:20</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>11</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-16 16:03:20</sys_created_on><sys_id>11dc28f783ec121054ba54dfeeaad39a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-16 16:03:20</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_reference</element><position>12</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-16 16:03:20</sys_created_on><sys_id>95dc28f783ec121054ba54dfeeaad39a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-16 16:03:20</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_creates_cont__automatically</element><position>13</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-16 16:03:20</sys_created_on><sys_id>1ddc28f783ec121054ba54dfeeaad39a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-16 16:03:20</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_create_control_requirements</element><position>14</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-16 16:03:20</sys_created_on><sys_id>91dc28f783ec121054ba54dfeeaad39b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-16 16:03:20</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_has_downstream_controls</element><position>15</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-16 16:03:20</sys_created_on><sys_id>19dc28f783ec121054ba54dfeeaad39b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-16 16:03:20</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>16</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-16 16:03:20</sys_created_on><sys_id>9ddc28f783ec121054ba54dfeeaad39b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1507800_complian_cc_control_objectives_import" sys_domain="global" view="Default view">91dca4b783ec121054ba54dfeeaad34a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-16 16:03:20</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_1507800_complian_cc_control_objectives_import</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-16 16:03:19</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>91dca4b783ec121054ba54dfeeaad34a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1507800_complian_cc_control_objectives_import</sys_name><sys_overrides/><sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package><sys_policy/><sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope><sys_update_name>sys_ui_section_91dca4b783ec121054ba54dfeeaad34a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-16 16:03:19</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1426111932</payload_hash>
+        <record_name>ComplianceCow Control Objectives Import</record_name>
+        <reverted_from/>
+        <source>2de3683783a8121054ba54dfeeaad319</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-16 16:03:20</sys_created_on>
+        <sys_id>21dc28f783ec121054ba54dfeeaad3ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191fb92fec60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-16 16:03:20</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>e5dc28f7d7ec121011b73fdc26ad8eaa</update_guid>
+        <update_guid_history>e5dc28f7d7ec121011b73fdc26ad8eaa:-1426111932,d5dc28f74fec12101df1ac5119c1d891:1842038137</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-16 16:04:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>3422f597a18b4f20a26a358fac224400</sys_id>
+        <sys_metadata>91dca4b783ec121054ba54dfeeaad34a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1507800_complian_cc_control_objectives_import</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_parent display_value="">091c64b783ec121054ba54dfeeaad3ad</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_scope_delete display_value="">28309376914141e08e3b135862f22410</sys_scope_delete>
+        <sys_update_name>sys_ui_section_91dca4b783ec121054ba54dfeeaad34a</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_91dca4b783ec121054ba54dfeeaad34a">21dc28f783ec121054ba54dfeeaad3ab</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-16 16:04:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

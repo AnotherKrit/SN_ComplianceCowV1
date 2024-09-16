@@ -66,7 +66,7 @@
         <update_guid_history>af91efd6652452901b970193db0636d9:-476412176</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Compliance Cow Evidence URLs">83de81a6c3e016905f909e1d050131e7</sys_audit_delete>
+        <sys_audit_delete display_value="">83de81a6c3e016905f909e1d050131e7</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-12 21:19:36</sys_created_on>

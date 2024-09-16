@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="8a58253cc358d6d05f909e1d050131a5" label="Github Segregation of Duties" max_length="40" name="x_1507800_complian_github_segregation_of_duties" type="collection">
-        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Control Name" max_length="40" name="control_name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Dependency" max_length="40" name="dependency" type="string"/>
-        <element label="Parent Control" max_length="15" name="parent_control" type="decimal"/>
-        <element label="Alias" max_length="15" name="alias" type="decimal"/>
-        <element attributes="edge_encryption_enabled=true" label="Description" max_length="40" name="description" type="string"/>
         <element label="Control Number" max_length="15" name="control_number" type="decimal"/>
-        <element attributes="edge_encryption_enabled=true" label="Type" max_length="40" name="type" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Reporting Level" max_length="40" name="reporting_level" type="string"/>
+        <element label="Parent Control" max_length="15" name="parent_control" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Alias" max_length="15" name="alias" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Type" max_length="40" name="type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Control Name" max_length="40" name="control_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="40" name="description" type="string"/>
     </element>
 </database>

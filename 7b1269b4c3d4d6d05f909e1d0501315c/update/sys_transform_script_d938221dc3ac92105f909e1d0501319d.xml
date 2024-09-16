@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
     <sys_transform_script action="INSERT_OR_UPDATE">
         <active>true</active>
-        <map display_value="CC Evidence File Transform">2bc09e1dc32492105f909e1d0501314c</map>
+        <map display_value="ComplianceCow Evidence File Transform">2bc09e1dc32492105f909e1d0501314c</map>
         <order>100</order>
         <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
 

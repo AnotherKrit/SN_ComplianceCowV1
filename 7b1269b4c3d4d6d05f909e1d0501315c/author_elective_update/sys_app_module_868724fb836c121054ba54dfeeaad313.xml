@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="System Import Sets">import_sets</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>ComplianceCow Control Objectives Import</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1507800_complian_cc_control_objectives_import</name>
+        <order>1100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-16 15:40:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>868724fb836c121054ba54dfeeaad313</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ComplianceCow Control Objectives Import</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_update_name>sys_app_module_868724fb836c121054ba54dfeeaad313</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-16 15:40:09</sys_updated_on>
+        <timeline_page/>
+        <title>ComplianceCow Control Objectives Import</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</application>
+        <file_path/>
+        <instance_id>a8d68ea3dbc6fd14ebdd2a5913961911</instance_id>
+        <instance_name>dev197481</instance_name>
+        <name>sys_app_module_868724fb836c121054ba54dfeeaad313</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="System Import Sets">import_sets</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>ComplianceCow Control Objectives Import</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_1507800_complian_cc_control_objectives_import</name><order>1100</order><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-16 15:40:09</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>868724fb836c121054ba54dfeeaad313</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ComplianceCow Control Objectives Import</sys_name><sys_overrides/><sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package><sys_policy/><sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope><sys_update_name>sys_app_module_868724fb836c121054ba54dfeeaad313</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-16 15:40:09</sys_updated_on><timeline_page/><title>ComplianceCow Control Objectives Import</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1464810905</payload_hash>
+        <record_name>ComplianceCow Control Objectives Import</record_name>
+        <reverted_from/>
+        <source>2de3683783a8121054ba54dfeeaad319</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-16 15:40:10</sys_created_on>
+        <sys_id>ce8724fb836c121054ba54dfeeaad315</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191fb7dc7eb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-16 15:40:10</sys_updated_on>
+        <type>Module</type>
+        <update_guid>c28724fbb36c12100b32dd6d6f318e15</update_guid>
+        <update_guid_history>c28724fbb36c12100b32dd6d6f318e15:1464810905</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="ComplianceCow Control Objectives Import">d10c60b783ec121054ba54dfeeaad39d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-16 15:59:46</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>0a5270bc4e3d426aa8a36946e90d9a04</sys_id>
+        <sys_metadata>868724fb836c121054ba54dfeeaad313</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ComplianceCow Control Objectives Import</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_scope_delete display_value="">28309376914141e08e3b135862f22410</sys_scope_delete>
+        <sys_update_name>sys_app_module_868724fb836c121054ba54dfeeaad313</sys_update_name>
+        <sys_update_version display_value="sys_app_module_868724fb836c121054ba54dfeeaad313">ce8724fb836c121054ba54dfeeaad315</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-16 15:59:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

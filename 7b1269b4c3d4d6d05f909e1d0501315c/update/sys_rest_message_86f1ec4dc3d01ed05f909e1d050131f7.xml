@@ -7,7 +7,7 @@
         <basic_auth_user/>
         <description>To start an assessment</description>
         <name>Start assessment</name>
-        <oauth2_profile display_value="Krit CC App Reg 5 default_profile">8a8073cbc3845e105f909e1d050131b6</oauth2_profile>
+        <oauth2_profile display_value="">8a8073cbc3845e105f909e1d050131b6</oauth2_profile>
         <protocol_name/>
         <rest_endpoint>https://phoenix.dev.compliancecow.live</rest_endpoint>
         <sys_class_name>sys_rest_message</sys_class_name>

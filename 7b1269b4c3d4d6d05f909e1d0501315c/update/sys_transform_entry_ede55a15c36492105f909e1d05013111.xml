@@ -5,7 +5,7 @@
         <coalesce_case_sensitive>false</coalesce_case_sensitive>
         <coalesce_empty_fields>false</coalesce_empty_fields>
         <date_format>yyyy-MM-dd HH:mm:ss</date_format>
-        <map display_value="CC Evidence File Transform">2bc09e1dc32492105f909e1d0501314c</map>
+        <map display_value="ComplianceCow Evidence File Transform">2bc09e1dc32492105f909e1d0501314c</map>
         <reference_value_field/>
         <source_field>assessmentrunid</source_field>
         <source_script><![CDATA[answer = (function transformEntry(source) {

@@ -25,17 +25,17 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f43a2dc3c3d416d45f909e1d05013180</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>CC Evidence Data</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ComplianceCow Evidence Data</sys_name>
         <sys_overrides/>
         <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
         <sys_policy/>
         <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
         <sys_update_name>sys_app_module_f43a2dc3c3d416d45f909e1d05013180</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-02 02:20:18</sys_updated_on>
+        <sys_updated_on>2024-09-16 19:17:56</sys_updated_on>
         <timeline_page/>
-        <title>CC Evidence Data</title>
+        <title>ComplianceCow Evidence Data</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

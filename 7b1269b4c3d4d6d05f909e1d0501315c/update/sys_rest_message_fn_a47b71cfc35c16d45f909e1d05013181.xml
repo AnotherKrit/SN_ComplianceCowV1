@@ -16,7 +16,7 @@
         <function_name>StartAssessment</function_name>
         <http_method>post</http_method>
         <lock>false</lock>
-        <oauth2_profile display_value="Krit CC App Reg 5 default_profile">8a8073cbc3845e105f909e1d050131b6</oauth2_profile>
+        <oauth2_profile display_value="">8a8073cbc3845e105f909e1d050131b6</oauth2_profile>
         <protocol_name/>
         <qualified_name>Start assessment [ StartAssessment ]</qualified_name>
         <rest_endpoint>https://dev.compliancecow.live/api/v1/customer/runs</rest_endpoint>

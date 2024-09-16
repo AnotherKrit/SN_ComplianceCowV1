@@ -49,7 +49,6 @@
         <chunk_size_bytes>700000</chunk_size_bytes>
         <compressed>true</compressed>
         <content_type>image/png</content_type>
-        <encryption_context/>
         <file_name>CC-icon.png</file_name>
         <hash>553c9e2fa2aed3c415fbda89791684d68d4d61ba4c62f95b46e33bd37d354759</hash>
         <image_height>512</image_height>
