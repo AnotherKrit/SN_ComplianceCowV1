@@ -3,7 +3,6 @@
         <element label="AssessmentId" max_length="40" name="assessmentid" type="string"/>
         <element label="SNControlObjective" max_length="32" name="sncontrolobjective" reference="sn_compliance_policy_statement" type="reference"/>
         <element label="IndicatorTempateId" max_length="32" name="indicatortempateid" reference="sn_grc_indicator_template" type="reference"/>
-        <element label="CCControlId" max_length="40" name="cccontrolid" type="string"/>
         <element label="PrimaryEvidenceName" max_length="40" name="primaryevidencename" type="string"/>
         <index name="index">
             <element name="indicatortempateid"/>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>read</operation>
+        <source_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-16 20:26:00</sys_created_on>
+        <sys_id>81f8217f8324521054ba54dfeeaad3c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_grc_profile_type</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_update_name>sys_scope_privilege_81f8217f8324521054ba54dfeeaad3c4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-16 20:26:00</sys_updated_on>
+        <target_name>sn_grc_profile_type</target_name>
+        <target_scope display_value="GRC: Profiles">53f81621cb200200829cf865734c9c58</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+</record_update>
