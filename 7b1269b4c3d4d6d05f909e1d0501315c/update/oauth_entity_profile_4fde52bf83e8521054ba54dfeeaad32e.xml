@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile">
+    <oauth_entity_profile action="INSERT_OR_UPDATE">
+        <default>true</default>
+        <grant_type>client_credentials</grant_type>
+        <jwt_provider/>
+        <name>ComplianceCow default_profile</name>
+        <oauth_entity display_value="ComplianceCow">43dad27783e8521054ba54dfeeaad367</oauth_entity>
+        <saml2_assertion_producer/>
+        <sys_class_name>oauth_entity_profile</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 00:21:31</sys_created_on>
+        <sys_id>4fde52bf83e8521054ba54dfeeaad32e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ComplianceCow default_profile</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_update_name>oauth_entity_profile_4fde52bf83e8521054ba54dfeeaad32e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 00:21:31</sys_updated_on>
+    </oauth_entity_profile>
+</record_update>
