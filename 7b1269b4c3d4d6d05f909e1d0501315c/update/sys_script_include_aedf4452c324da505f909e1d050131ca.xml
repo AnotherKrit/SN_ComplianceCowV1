@@ -25,7 +25,13 @@ ComplianceCowConstants.prototype = {
         INDICATOR_UTIL: 'x_1507800_complian.ComplianceCowIndicatorUtil'
     },
 
-    OAUTH_PROFILE_ID: "4fde52bf83e8521054ba54dfeeaad32e",
+	COMPLIANCE_STATUS: {
+		COMPLIANT : 'COMPLIANT',
+		NON_COMPLIANT: 'NON_COMPLIANT',
+		NOT_DETERMINED: 'NOT_DETERMINED'
+	},
+
+    OAUTH_PROFILE_ID: '4fde52bf83e8521054ba54dfeeaad32e',
 
     TABLES: {
         ASSESSMENT: 'x_1507800_complian_assessment',
@@ -86,14 +92,14 @@ ComplianceCowConstants.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-11 22:06:39</sys_created_on>
         <sys_id>aedf4452c324da505f909e1d050131ca</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>ComplianceCowConstants</sys_name>
         <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
         <sys_update_name>sys_script_include_aedf4452c324da505f909e1d050131ca</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-17 00:45:26</sys_updated_on>
+        <sys_updated_on>2024-09-18 01:05:13</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>aedf4452c324da505f909e1d050131ca</id>

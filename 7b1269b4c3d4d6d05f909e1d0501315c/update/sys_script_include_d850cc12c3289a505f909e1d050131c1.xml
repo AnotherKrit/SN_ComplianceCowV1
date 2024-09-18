@@ -128,7 +128,7 @@ ComplianceCowIndicatorUtil.prototype = {
 			supportingDataIds:[]
 		};
 
-		this.assignAssessmentEvidenceforControl(gr, null);
+		this.assignAssessmentEvidenceforControl(control, null);
 		var assessment_rec = this.getLatestAssessmentRecord();
 		var latest_assessment_run_id = this.getLatestEvidenceRunId();
 		if (assessment_rec == null || latest_assessment_run_id == null)
@@ -155,7 +155,8 @@ ComplianceCowIndicatorUtil.prototype = {
 		if (evidence_rec != null){
 			var evidence_urlrec = this.getSupportingEvidenceLinkId(latest_assessment_run_id);
 			output.value = 500;
-			output.supportingDataIds.push(evidence_urlrec);
+			output.supportingDataIds[0]=evidence_urlrec;
+			
 			if (evidence_rec.compliancestatus == this.ccConstScript.COMPLIANCE_STATUS.COMPLIANT) {
 				output.passed = true;
 			}
@@ -173,14 +174,14 @@ ComplianceCowIndicatorUtil.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-11 20:58:47</sys_created_on>
         <sys_id>d850cc12c3289a505f909e1d050131c1</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>ComplianceCowIndicatorUtil</sys_name>
         <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
         <sys_update_name>sys_script_include_d850cc12c3289a505f909e1d050131c1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-17 00:48:31</sys_updated_on>
+        <sys_updated_on>2024-09-18 03:26:35</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>d850cc12c3289a505f909e1d050131c1</id>

@@ -10,8 +10,8 @@
         <element label="ActionResponseURL" max_length="40" name="actionresponseurl" type="url"/>
         <element label="ActionStatus" max_length="40" name="actionstatus" type="string"/>
         <element label="OtherFields" max_length="4000" name="otherfields" type="simple_name_values"/>
-        <element label="EvaluationTime" max_length="40" name="evaluatedtime" type="glide_date_time"/>
-        <element label="AssessmentRunStartTime" max_length="40" name="assessmenttime" type="glide_date_time"/>
+        <element label="EvaluatedTime" max_length="40" name="evaluatedtime" type="glide_date_time"/>
+        <element label="AssessmentTime" max_length="40" name="assessmenttime" type="glide_date_time"/>
         <element label="ComplianceStatus" max_length="40" name="compliancestatus" type="string"/>
         <element label="ValidationStatusNotes" max_length="250" name="validationstatusnotes" type="string"/>
         <element label="ResourceURL" max_length="100" name="resourceurl" type="string"/>

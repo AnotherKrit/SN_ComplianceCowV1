@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_1507800_complian.glide.oauth.inbound.client.credential.grant_type.enabled</name>
+        <read_roles/>
+        <suffix>glide.oauth.inbound.client.credential.grant_type.enabled</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 01:16:11</sys_created_on>
+        <sys_id>d34beeff832c521054ba54dfeeaad3f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1507800_complian.glide.oauth.inbound.client.credential.grant_type.enabled</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_update_name>sys_properties_d34beeff832c521054ba54dfeeaad3f9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 01:16:11</sys_updated_on>
+        <type>boolean</type>
+        <value>true</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=d34beeff832c521054ba54dfeeaad3f9"/>
+</record_update>
