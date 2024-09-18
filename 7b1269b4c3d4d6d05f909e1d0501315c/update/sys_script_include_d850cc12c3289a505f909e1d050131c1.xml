@@ -15,6 +15,7 @@ ComplianceCowIndicatorUtil.prototype = {
     initialize: function() {
         this.assessment_id = "";
         this.primaryevidencename = "";
+		this.supportingevidences = "";
         this.ccConstScript = new ComplianceCowConstants();
     },
 
@@ -29,6 +30,7 @@ ComplianceCowIndicatorUtil.prototype = {
             if (gr_ctl_mapping.next()){
                 this.assessment_id  = gr_ctl_mapping.assessmentid;
                 this.primaryevidencename = gr_ctl_mapping.primaryevidencename;
+				this.supportingevidences = gr_ctl_mapping.supportingevidences;
                 break;
             }
             else{
@@ -108,17 +110,27 @@ ComplianceCowIndicatorUtil.prototype = {
     },
 
 	getSupportingEvidenceLinkId: function(assessment_run_id){
+		var evidence_array = [];
+		var evidence_sysids = [];
+		evidence_array.push(this.primaryevidencename);
+		if (!gs.nil(this.supportingevidences))
+		{
+			var supporting_evidences_arr = this.supportingevidences.split(",");
+			for (var i=0; i < supporting_evidences_arr.length; i++)
+				evidence_array.push(supporting_evidences_arr[i])
+		}
 		var gr_record = new GlideRecord(this.ccConstScript.TABLES.EVIDENCE_URL);
         gr_record.addQuery('assessmentid', this.assessment_id);
-        gr_record.addQuery('evidencename', this.primaryevidencename);
+        //gr_record.addQuery('evidencename', this.primaryevidencename);
         gr_record.addQuery('assessmentrunid', assessment_run_id);
+		gr.addQuery("evidencename", "IN", evidence_array);
         gr_record.query();
 
-        if (gr_record.next())
-            return gr_record.sys_id;
-        else
-            return null;
-	
+        while (gr_record.next()){
+			evidence_sysids.push(gr_record.sys_id);
+		}
+		
+		return evidence_sysids;
 	},
 
     performIndicatorCheck: function(control, indicator_template_id){
@@ -153,9 +165,8 @@ ComplianceCowIndicatorUtil.prototype = {
 		var resource_name = ci.resourcename;
 		var evidence_rec = this.getLatestEvidenceRecord( latest_assessment_run_id, resource_id, resource_name);
 		if (evidence_rec != null){
-			var evidence_urlrec = this.getSupportingEvidenceLinkId(latest_assessment_run_id);
+			output.supportingDataIds = this.getSupportingEvidenceLinkId(latest_assessment_run_id);
 			output.value = 500;
-			output.supportingDataIds[0]=evidence_urlrec;
 			
 			if (evidence_rec.compliancestatus == this.ccConstScript.COMPLIANCE_STATUS.COMPLIANT) {
 				output.passed = true;
@@ -174,14 +185,14 @@ ComplianceCowIndicatorUtil.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-11 20:58:47</sys_created_on>
         <sys_id>d850cc12c3289a505f909e1d050131c1</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>ComplianceCowIndicatorUtil</sys_name>
         <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
         <sys_update_name>sys_script_include_d850cc12c3289a505f909e1d050131c1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-18 03:26:35</sys_updated_on>
+        <sys_updated_on>2024-09-18 04:48:10</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>d850cc12c3289a505f909e1d050131c1</id>
