@@ -21,7 +21,7 @@
 	var cc_consts = new ComplianceCowConstants();
 
 	var r = new sn_ws.RESTMessageV2(cc_consts.OUTBOUND_REST_APIS.START_ASSESSMENT.NAME, 
-						cc_consts.	OUTBOUND_REST_APIS.START_ASSESSMENT.METHOD_NAME);
+						cc_consts.OUTBOUND_REST_APIS.START_ASSESSMENT.METHOD_NAME);
 
 	r.setAuthenticationProfile('oauth2', cc_consts.OAUTH_PROFILE_ID);
 
@@ -32,8 +32,17 @@
 	//by setting a MID server or calling executeAsync, one needs to set skip_sensor
 	//to true. Otherwise, one may get an intermittent error that the response body is null
 	//r.setEccParameter('skip_sensor', true);
-	var gr = new GlideRecord(cc_consts.TABLES.ASSESSMENT);
+
 	var assessmentId = cc_consts.ASSESSMENT_IDS.NIST_CSF; 
+
+	//clean up the evidence data table for this assessment
+	var gr_data = new GlideRecord(cc_consts.TABLES.EVIDENCE_DATA);
+	gr_data.addQuery('assessmentid', assessmentId);
+	gr_data.query();
+	gr_data.deleteMultiple();
+
+	var gr = new GlideRecord(cc_consts.TABLES.ASSESSMENT);
+	
 	var start_time = new GlideDateTime();
 	var recExists = gr.get("id", assessmentId);
 	if (recExists)
@@ -95,14 +104,14 @@ catch(ex) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-09 16:19:50</sys_created_on>
         <sys_id>c5e898a5c3a096105f909e1d050131ef</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>ComplianceCow Start NIST FOR AWS Assessment</sys_name>
         <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
         <sys_policy/>
         <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
         <sys_update_name>sysauto_script_c5e898a5c3a096105f909e1d050131ef</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-12 14:47:37</sys_updated_on>
+        <sys_updated_on>2024-09-18 04:25:18</sys_updated_on>
         <time_zone>US/Eastern</time_zone>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
