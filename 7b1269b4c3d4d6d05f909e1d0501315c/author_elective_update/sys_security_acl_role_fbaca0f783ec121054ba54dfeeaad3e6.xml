@@ -41,7 +41,7 @@
         <update_guid_history>33aca0f7abec121090315556d59759e9:85269916</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_1507800_complian_cc_control_objectives_import.x_1507800_complian.compliancecow">ba2da03b83ec121054ba54dfeeaad37e</sys_audit_delete>
+        <sys_audit_delete display_value="">ba2da03b83ec121054ba54dfeeaad37e</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-16 16:04:47</sys_created_on>

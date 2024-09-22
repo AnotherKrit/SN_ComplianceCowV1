@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="07c5de3f83a8521054ba54dfeeaad357" extends="sys_import_set_row" label="ComplianceCow SN Control Mapping Import" max_length="40" name="x_1507800_complian_cc_sn_control_mapping_import" type="collection">
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=SNControlObjective" label="SNControlObjective" max_length="40" name="u_sncontrolobjective" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=IndicatorTempateId" label="IndicatorTempateId" max_length="40" name="u_indicatortempateid" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=PrimaryEvidenceName" label="PrimaryEvidenceName" max_length="40" name="u_primaryevidencename" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=SNControlObjective" label="SNControlObjective" max_length="40" name="u_sncontrolobjective" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=AssessmentId" label="AssessmentId" max_length="40" name="u_assessmentid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=IndicatorTempateId" label="IndicatorTempateId" max_length="40" name="u_indicatortempateid" type="string"/>
     </element>
 </database>

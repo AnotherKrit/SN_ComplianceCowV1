@@ -41,7 +41,7 @@
         <update_guid_history>f4d9a9bf1d2452102a0823517a623b72:241158531</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_1507800_complian_cc_entity_filter_transform.x_1507800_complian.compliancecow_e">a24aa5ff8324521054ba54dfeeaad3e4</sys_audit_delete>
+        <sys_audit_delete display_value="">a24aa5ff8324521054ba54dfeeaad3e4</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-16 20:31:50</sys_created_on>

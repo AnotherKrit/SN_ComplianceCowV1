@@ -66,7 +66,7 @@
         <update_guid_history>63aca0f784ec1210694c6036bb4814b3:707444388</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="ComplianceCow Control Objectives Imports">b22da03b83ec121054ba54dfeeaad395</sys_audit_delete>
+        <sys_audit_delete display_value="">b22da03b83ec121054ba54dfeeaad395</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-16 16:04:48</sys_created_on>

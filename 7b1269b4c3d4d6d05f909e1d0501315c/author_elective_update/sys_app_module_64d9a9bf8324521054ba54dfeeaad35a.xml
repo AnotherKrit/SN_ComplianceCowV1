@@ -66,7 +66,7 @@
         <update_guid_history>20d9a9bfc72452106f2492c33518805c:-890015039</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="ComplianceCow Entity Filter Transforms">b24ae5ff8324521054ba54dfeeaad338</sys_audit_delete>
+        <sys_audit_delete display_value="">b24ae5ff8324521054ba54dfeeaad338</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-16 20:31:51</sys_created_on>

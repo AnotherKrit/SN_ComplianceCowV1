@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="5f4d6d0bc3d416d45f909e1d05013180" extends="sys_import_set_row" label="ComplianceCow Evidence Data Import" max_length="40" name="x_1507800_complian_cc_evidence_data_import" type="collection">
-        <element label="ComplianceStatusReason" max_length="250" name="compliancestatusreason" type="string"/>
-        <element label="ValidationStatusCode" max_length="40" name="validationstatuscode" type="string"/>
-        <element label="ResourceTags" max_length="100" name="resourcetags" type="string"/>
-        <element label="UserAction" max_length="40" name="useraction" type="string"/>
         <element label="ResourceType" max_length="40" name="resourcetype" type="string"/>
-        <element label="ResourceName" max_length="100" name="resourcename" type="string"/>
-        <element label="Source" max_length="40" name="source" type="string"/>
-        <element label="ActionResponseURL" max_length="40" name="actionresponseurl" type="url"/>
-        <element label="ActionStatus" max_length="40" name="actionstatus" type="string"/>
-        <element label="OtherFields" max_length="4000" name="otherfields" type="simple_name_values"/>
-        <element label="EvaluatedTime" max_length="40" name="evaluatedtime" type="glide_date_time"/>
-        <element label="AssessmentTime" max_length="40" name="assessmenttime" type="glide_date_time"/>
         <element label="ComplianceStatus" max_length="40" name="compliancestatus" type="string"/>
-        <element label="ValidationStatusNotes" max_length="250" name="validationstatusnotes" type="string"/>
-        <element label="ResourceURL" max_length="100" name="resourceurl" type="string"/>
+        <element label="ResourceTags" max_length="100" name="resourcetags" type="string"/>
+        <element label="EvaluatedTime" max_length="40" name="evaluatedtime" type="glide_date_time"/>
+        <element label="ComplianceStatusReason" max_length="250" name="compliancestatusreason" type="string"/>
+        <element label="ActionStatus" max_length="40" name="actionstatus" type="string"/>
+        <element label="Source" max_length="40" name="source" type="string"/>
         <element label="EvidenceFileName" max_length="40" name="evidencefilename" type="string"/>
-        <element label="AssessmentRunId" max_length="40" name="assessmentrunid" type="string"/>
-        <element label="System" max_length="40" name="system" type="string"/>
-        <element label="SNControlId" max_length="40" name="sncontrolid" type="string"/>
-        <element label="ResourceID" max_length="100" name="resourceid" type="string"/>
-        <element label="AssessmentId" max_length="40" name="assessmentid" type="string"/>
+        <element label="RemediationSteps" max_length="500" name="remediationsteps" type="string"/>
         <element label="ResourceLocation" max_length="40" name="resourcelocation" type="string"/>
+        <element label="ResourceID" max_length="100" name="resourceid" type="string"/>
+        <element label="System" max_length="40" name="system" type="string"/>
+        <element label="ActionResponseURL" max_length="40" name="actionresponseurl" type="url"/>
+        <element label="ResourceName" max_length="100" name="resourcename" type="string"/>
+        <element label="ValidationStatusNotes" max_length="250" name="validationstatusnotes" type="string"/>
+        <element label="UserAction" max_length="40" name="useraction" type="string"/>
+        <element label="AssessmentTime" max_length="40" name="assessmenttime" type="glide_date_time"/>
+        <element label="ResourceURL" max_length="100" name="resourceurl" type="string"/>
+        <element label="ValidationStatusCode" max_length="40" name="validationstatuscode" type="string"/>
+        <element label="OtherFields" max_length="4000" name="otherfields" type="simple_name_values"/>
+        <element label="SNControlId" max_length="40" name="sncontrolid" type="string"/>
+        <element label="AssessmentRunId" max_length="40" name="assessmentrunid" type="string"/>
         <element label="id" max_length="40" name="id" type="string"/>
-        <element label="CCControlId" max_length="40" name="cccontrolid" type="string"/>
-        <element label="RemediationSteps" max_length="40" name="remediationstepsuseraction" type="string"/>
+        <element label="AssessmentId" max_length="40" name="assessmentid" type="string"/>
     </element>
 </database>
