@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="acebb575c3e8de105f909e1d05013130" extends="sys_import_set_row" label="ComplianceCow Aws Resources Import" max_length="40" name="x_1507800_complian_cc_aws_resources_import" type="collection">
         <element attributes="edge_encryption_enabled=true,import_attribute_name=ResourceType" label="ResourceType" max_length="40" name="u_resourcetype" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=ResourceName" label="ResourceName" max_length="100" name="u_resourcename" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ResourceName" label="ResourceName" max_length="300" name="u_resourcename" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=ResourceLocation" label="ResourceLocation" max_length="40" name="u_resourcelocation" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=ResourceURL" label="ResourceURL" max_length="200" name="u_resourceurl" type="url"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=ResourceId" label="ResourceId" max_length="100" name="u_resourceid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ResourceURL" label="ResourceURL" max_length="1200" name="u_resourceurl" type="url"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ResourceId" label="ResourceId" max_length="300" name="u_resourceid" type="string"/>
     </element>
 </database>

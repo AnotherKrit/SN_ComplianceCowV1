@@ -3,10 +3,10 @@
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Active" label="Active" max_length="40" name="u_active" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Creates controls automatically" label="Creates controls automatically" max_length="40" name="u_creates_cont__automatically" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Entity Type" label="Entity Type" max_length="40" name="u_entity_type" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Main" label="Main" max_length="40" name="u_main" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Main" label="Main" max_length="250" name="u_main" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Create control requirements" label="Create control requirements" max_length="40" name="u_create_control_requirements" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Name" label="Name" max_length="40" name="u_name" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Reference" label="Reference" max_length="40" name="u_reference" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Name" label="Name" max_length="250" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Reference" label="Reference" max_length="100" name="u_reference" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Has downstream controls" label="Has downstream controls" max_length="40" name="u_has_downstream_controls" type="string"/>
     </element>
 </database>
