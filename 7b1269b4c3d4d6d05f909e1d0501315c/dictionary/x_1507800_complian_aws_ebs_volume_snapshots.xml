@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="hasLabels=true" db_object_id="a8698c88c3a81e185f909e1d050131e8" label="CC AWS EBS Volume Snapshots" max_length="40" name="x_1507800_complian_aws_ebs_volume_snapshots" type="collection">
-        <element label="ResourceId" max_length="100" name="resourceid" type="string"/>
-        <element label="ResourceName" max_length="100" name="resourcename" type="string"/>
         <element label="ResourceLocation" max_length="40" name="resourcelocation" type="string"/>
         <element label="ResourceURL" max_length="200" name="resourceurl" type="string"/>
+        <element label="ResourceId" max_length="100" name="resourceid" type="string"/>
+        <element label="ResourceName" max_length="100" name="resourcename" type="string"/>
     </element>
 </database>

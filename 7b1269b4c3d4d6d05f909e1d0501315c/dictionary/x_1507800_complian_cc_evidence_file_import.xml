@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="b0dace59c36092105f909e1d05013136" extends="sys_import_set_row" label="ComplianceCow Evidence File Import" max_length="40" name="x_1507800_complian_cc_evidence_file_import" type="collection">
-        <element label="FileContent" max_length="10000" name="filecontent" type="string"/>
         <element label="AssessmentId" max_length="40" name="assessmentid" type="string"/>
-        <element label="FileName" max_length="40" name="filename" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=ResourceLocation" label="ResourceLocation" max_length="40" name="u_resourcelocation" type="string"/>
-        <element label="FileFormat" max_length="40" name="fileformat" type="string"/>
-        <element label="EvidenceName" max_length="40" name="evidencename" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=ResourceName" label="ResourceName" max_length="40" name="u_resourcename" type="string"/>
         <element label="AssessmentRunId" max_length="40" name="assessmentrunid" type="string"/>
+        <element label="EvidenceName" max_length="40" name="evidencename" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ResourceLocation" label="ResourceLocation" max_length="40" name="u_resourcelocation" type="string"/>
         <element label="AssessmentTime" max_length="40" name="assessmenttime" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=ResourceType" label="ResourceType" max_length="40" name="u_resourcetype" type="string"/>
         <element label="CCControlId" max_length="40" name="cccontrolid" type="string"/>
+        <element label="FileFormat" max_length="40" name="fileformat" type="string"/>
+        <element label="FileName" max_length="40" name="filename" type="string"/>
+        <element label="FileContent" max_length="10000" name="filecontent" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ResourceName" label="ResourceName" max_length="40" name="u_resourcename" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=ResourceId" label="ResourceId" max_length="40" name="u_resourceid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ResourceType" label="ResourceType" max_length="40" name="u_resourcetype" type="string"/>
     </element>
 </database>

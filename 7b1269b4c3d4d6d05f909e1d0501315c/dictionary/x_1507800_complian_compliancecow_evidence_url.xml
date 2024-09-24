@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="bef1af16c3ac12905f909e1d050131cc" label="ComplianceCow Evidence URL" max_length="40" name="x_1507800_complian_compliancecow_evidence_url" type="collection">
+        <element label="AssessmentTime" max_length="40" name="assessmenttime" type="glide_date_time"/>
+        <element label="AssessmentId" max_length="50" name="assessmentid" type="string"/>
         <element label="EvidenceName" max_length="40" name="evidencename" type="string"/>
         <element label="EvidenceURL" max_length="1024" name="evidenceurl" type="url"/>
+        <element label="AssessmentName" max_length="80" name="assessmentname" type="string"/>
         <element label="AssessmentRunId" max_length="50" name="assessmentrunid" type="string"/>
-        <element label="AssessmentId" max_length="50" name="assessmentid" type="string"/>
-        <element label="AssessmentTime" max_length="40" name="assessmenttime" type="glide_date_time"/>
     </element>
 </database>

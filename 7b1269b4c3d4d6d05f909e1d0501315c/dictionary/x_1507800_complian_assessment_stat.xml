@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="3a233c85c3581ed05f909e1d05013198" label="ComplianceCow Assessment Status" max_length="40" name="x_1507800_complian_assessment_stat" type="collection">
+        <element label="Started Time" max_length="40" name="started_time" type="glide_date_time"/>
+        <element label="Assessment Id" max_length="50" name="assessment_id" type="string"/>
+        <element label="Started By" max_length="32" name="started_by" reference="sys_user" type="reference"/>
         <element choice="1" label="Request Status" max_length="40" name="request_status" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Requested" value="Requested"/>
                 <element inactive_on_update="false" label="Started" value="Started"/>
+                <element inactive_on_update="false" label="Requested" value="Requested"/>
                 <element inactive_on_update="false" label="Failed" sequence="2" value="Failed"/>
             </choice>
         </element>
-        <element label="Response Error Message" max_length="300" name="response_error_message" type="string"/>
-        <element label="Started Time" max_length="40" name="started_time" type="glide_date_time"/>
-        <element label="Started By" max_length="32" name="started_by" reference="sys_user" type="reference"/>
         <element label="Response Status Code" max_length="40" name="response_status_code" type="integer"/>
+        <element label="Response Error Message" max_length="300" name="response_error_message" type="string"/>
         <element label="Assessment Run Id" max_length="50" name="assessment_run_id" type="string"/>
-        <element label="Assessment Id" max_length="50" name="assessment_id" type="string"/>
         <index name="index">
             <element name="assessment_id"/>
         </index>
