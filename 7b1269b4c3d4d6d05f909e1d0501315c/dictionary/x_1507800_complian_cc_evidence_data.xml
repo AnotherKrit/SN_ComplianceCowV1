@@ -4,7 +4,7 @@
         <element label="ActionResponseURL" max_length="1024" name="actionresponseurl" type="url"/>
         <element label="ResourceTags" max_length="100" name="resourcetags" type="string"/>
         <element label="ResourceType" max_length="40" name="resourcetype" type="string"/>
-        <element label="ResourceURL" max_length="100" name="resourceurl" type="string"/>
+        <element label="ResourceURL" max_length="2400" name="resourceurl" type="string"/>
         <element label="ValidationStatusNotes" max_length="250" name="validationstatusnotes" type="string"/>
         <element label="ComplianceStatusReason" max_length="250" name="compliancestatusreason" type="string"/>
         <element label="ComplianceStatus" max_length="40" name="compliancestatus" type="string"/>
@@ -14,7 +14,7 @@
         <element label="AssessmentId" max_length="40" name="assessmentid" type="string"/>
         <element label="EvidenceFileName" max_length="40" name="evidencefilename" type="string"/>
         <element label="System" max_length="40" name="system" type="string"/>
-        <element label="ResourceID" max_length="100" name="resourceid" type="string"/>
+        <element label="ResourceID" max_length="250" name="resourceid" type="string"/>
         <element label="EvaluatedTime" max_length="40" name="evaluatedtime" type="glide_date_time"/>
         <element label="ID" max_length="40" name="id" type="string"/>
         <element label="ResourceName" max_length="100" name="resourcename" type="string"/>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1507800_complian.ComplianceCowIndicatorAssessment</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Script to evaluate compliance based on rules in Control objective and Control requirements</description>
+        <mobile_callable>false</mobile_callable>
+        <name>ComplianceCowIndicatorAssessment</name>
+        <script><![CDATA[var ComplianceCowIndicatorAssessment = Class.create();
+
+//Process indicators which has both item and profile
+ComplianceCowIndicatorAssessment.prototype = {
+    initialize: function(assessment_id, constScript) {
+		this.assessment_id = assessment_id;
+        this.ccConstScript = constScript;
+		this.ccHelper = new ComplianceCowIndicatorHelper(constScript);
+    },
+
+	getControlRequirements(control_objective){
+		ctl_requirements = [];
+		var gr = new GlideRecord("sn_compliance_m2m_policy_stmt_policy_stmt_rqmt");
+		gr.addQuery("policy_statement", control_objective.sys_id);
+		gr.query();
+		while (gr.query()){
+			ctl_requirements.push(gr.policy_statement_requirement)
+		}
+		return ctl_requirements;
+	},
+
+	performDefaultIndicatorCheck: function(control, indicator_template_id){
+		var output = {
+			passed: null,
+			value: null,
+			supportingDataIds:[]
+		};
+		
+		var result = [];
+
+		var assessment_rec = this.ccHelper.getLatestAssessmentRecord(this.assessment_id);
+		var proceed = this.ccHelper.handleAssessment(assessment_rec, this.assessment_id);
+		if (!proceed)
+			return output;
+		
+		var lastest_assessment_run_id = assessment_rec.assessment_run_id;
+
+		var ctl_obj = control.content;
+		var ci = control.profile.applies_to;  //configuration item
+		var criterias = {
+			resourceid : ci.resourceid,
+			resourcename : ci.resourcename
+		};
+
+		var ctlobj_evidence = this.ccHelper.getEvidenceNamesForControlObj(ctl_obj, null);
+		if (!gs.nil(ctlobj_evidence))
+		{
+			var isLatestEvidence = this.ccHelper.isEvidenceForLatestRunPresent(assessment_id, 
+											assessment_run_id, ctlobj_evidence.primaryevidence);
+			if (!isLatestEvidence)
+				return output;
+			
+			var custom_compliancelogic_script = this.ccHelper.getCustomComplianceLogicForControlObj(ctl_obj);
+			if (custom_compliancelogic_script == null)
+			{
+				var compliance_rec = this.ccHelper.getLatestComplianceRecordForCriterias(assessment_id, 		assessment_run_id, ctlobj_evidence.primaryevidence, criterias, "");
+				var evidencename_array = [];
+				evidencename_array.push(ctlobj_evidence.primaryevidence);
+				evidencename_array.push(ctlobj_evidence.supportingevidences);
+				result.push({
+					passed: compliance_rec.compliancestatus,
+					value: 500,
+					supportingDataIds: this.ccHelper.getSupportingEvidenceLinkId(assessment_id, 		assessment_run_id, evidencename_array )
+				});
+			}
+			else {
+				//evaluate script
+			}
+		}
+		
+		var ctl_reqs = this.getControlRequirements(ctl_obj);
+		if (ctl_reqs.length > 0){
+			for (var req_index = 0; req_index < ctl_reqs.length; req_index ++){
+				var ctlreq_evidence = this.ccHelper.getEvidenceNamesForControlReq(ctl_reqs[req_index], null);
+				if (!gs.nil(ctlreq_evidence))
+				{
+					var isLatestReqEvidence = this.ccHelper.isEvidenceForLatestRunPresent(assessment_id, 
+													assessment_run_id, ctlreq_evidence.primaryevidence);
+					if (!isLatestReqEvidence)
+						return output;
+					
+					var cclogic_script = this.ccHelper.getCustomComplianceLogicForControlReq(ctl_reqs[req_index]);
+					if (cclogic_script == null)
+					{
+						var compliancereq_rec = this.ccHelper.getLatestComplianceRecordForCriterias(assessment_id, assessment_run_id, ctlreq_evidence.primaryevidence, criterias, "");
+						var evidence_array = [];
+						evidence_array.push(ctlreq_evidence.primaryevidence);
+						evidence_array.push(ctlreq_evidence.supportingevidences);
+						result.push({
+							passed: compliancereq_rec.compliancestatus,
+							value: 500,
+							supportingDataIds: this.ccHelper.getSupportingEvidenceLinkId(assessment_id, 		assessment_run_id, evidence_array )
+						});
+					}
+					else {
+						//evaluate script
+					}
+				}
+			}
+		}
+		
+		output.value = 500;
+		for (var j=0; j <result.length; j++){
+			output.passed = true;
+			if (result.passed == this.ccConstScript.COMPLIANCE_STATUS.NON_COMPLIANT)
+				output.passed = false;
+			if (output.passed != false && result.passed == this.ccConstScript.COMPLIANCE_STATUS.NOT_DETERMINED )
+				output.passed = null;
+			output.supportingDataIds.push(result.supportingDataIds);
+		}
+
+		//evidence_rec is null or compliancestatus is NOT_DETERMINED.. return output with null values
+		return output; 
+	},
+    type: 'ComplianceCowIndicatorAssessment'
+}
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-25 20:56:14</sys_created_on>
+        <sys_id>de027fe68374561054ba54dfeeaad371</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>ComplianceCowIndicatorAssessment</sys_name>
+        <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
+        <sys_update_name>sys_script_include_de027fe68374561054ba54dfeeaad371</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-25 23:15:22</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>de027fe68374561054ba54dfeeaad371</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-25 20:56:14</sys_created_on>
+        <sys_id>f726c8f683b4561054ba54dfeeaad361</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-25 20:56:14</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

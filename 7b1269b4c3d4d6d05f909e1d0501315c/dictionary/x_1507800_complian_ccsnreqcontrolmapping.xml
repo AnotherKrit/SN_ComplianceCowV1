@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d946647a8378561054ba54dfeeaad3bf" label="ComplianceCow SNReqControlMapping" max_length="40" name="x_1507800_complian_ccsnreqcontrolmapping" type="collection">
+        <element label="AssessmentId" max_length="40" name="assessmentid" type="string"/>
+        <element label="SupportingEvidences" max_length="500" name="supportingevidences" type="string"/>
+        <element label="IndicatorTempateId" max_length="32" name="indicatortempateid" reference="sn_grc_indicator_template" type="reference"/>
+        <element label="Control Objective Requirement" max_length="32" name="control_objective_requirement" reference="sn_compliance_policy_stmt_requirement" type="reference"/>
+        <element label="CustomComplianceLogic" max_length="8000" name="customcompliancelogic" type="script"/>
+        <element label="PrimaryEvidenceName" max_length="40" name="primaryevidencename" type="string"/>
+        <index name="index">
+            <element name="control_objective_requirement"/>
+        </index>
+        <index name="index2">
+            <element name="indicatortempateid"/>
+        </index>
+    </element>
+</database>

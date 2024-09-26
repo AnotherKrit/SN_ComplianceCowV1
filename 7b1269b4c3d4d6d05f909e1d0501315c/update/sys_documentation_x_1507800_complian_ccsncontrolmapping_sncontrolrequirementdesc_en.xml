@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="sncontrolobjrequirement" label="Control Requirement Number" language="en" table="x_1507800_complian_ccsncontrolmapping">
+    <sys_documentation element="sncontrolrequirementdesc" label="Control Requirement Description" language="en" table="x_1507800_complian_ccsncontrolmapping">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>sncontrolobjrequirement</element>
+            <element>sncontrolrequirementdesc</element>
             <help/>
             <hint/>
-            <label>Control Requirement Number</label>
+            <label>Control Requirement Description</label>
             <language>en</language>
             <name>x_1507800_complian_ccsncontrolmapping</name>
-            <plural>Control Requirement Numbers</plural>
+            <plural>Control Requirement Descriptions</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-09-24 19:06:42</sys_created_on>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_name>Control Requirement Number</sys_name>
+            <sys_created_on>2024-09-24 21:12:22</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Control Requirement Description</sys_name>
             <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
             <sys_policy/>
             <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
-            <sys_update_name>sys_documentation_x_1507800_complian_ccsncontrolmapping_sncontrolobjrequirement_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_1507800_complian_ccsncontrolmapping_sncontrolrequirementdesc_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-09-24 21:11:18</sys_updated_on>
+            <sys_updated_on>2024-09-24 21:12:22</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
