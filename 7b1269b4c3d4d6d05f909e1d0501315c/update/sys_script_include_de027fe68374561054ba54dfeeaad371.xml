@@ -15,21 +15,23 @@ ComplianceCowIndicatorAssessment.prototype = {
     initialize: function(assessment_id, constScript) {
 		this.assessment_id = assessment_id;
         this.ccConstScript = constScript;
-		this.ccHelper = new ComplianceCowIndicatorHelper(constScript);
+		this.ccUtil = new ComplianceCowIndicatorUtil(constScript);
     },
 
 	getControlRequirements(control_objective){
-		ctl_requirements = [];
+		var ctl_requirements = [];
 		var gr = new GlideRecord("sn_compliance_m2m_policy_stmt_policy_stmt_rqmt");
 		gr.addQuery("policy_statement", control_objective.sys_id);
 		gr.query();
-		while (gr.query()){
-			ctl_requirements.push(gr.policy_statement_requirement)
+		while (gr.next()){
+			var gr_req = new GlideRecord("sn_compliance_policy_stmt_requirement");
+			gr_req.get(gr.policy_statement_requirement); //get control requirement for the sys_id
+			ctl_requirements.push(gr_req);
 		}
 		return ctl_requirements;
 	},
 
-	performDefaultIndicatorCheck: function(control, indicator_template_id){
+	performIndicatorCheck: function(control, indicator_template_id){
 		var output = {
 			passed: null,
 			value: null,
@@ -38,8 +40,8 @@ ComplianceCowIndicatorAssessment.prototype = {
 		
 		var result = [];
 
-		var assessment_rec = this.ccHelper.getLatestAssessmentRecord(this.assessment_id);
-		var proceed = this.ccHelper.handleAssessment(assessment_rec, this.assessment_id);
+		var assessment_rec = this.ccUtil.getLatestAssessmentRunRecord(this.assessment_id);
+		var proceed = this.ccUtil.handleAssessment(assessment_rec, this.assessment_id);
 		if (!proceed)
 			return output;
 		
@@ -52,25 +54,25 @@ ComplianceCowIndicatorAssessment.prototype = {
 			resourcename : ci.resourcename
 		};
 
-		var ctlobj_evidence = this.ccHelper.getEvidenceNamesForControlObj(ctl_obj, null);
+		var ctlobj_evidence = this.ccUtil.getEvidenceNamesForControlObj(ctl_obj, null);
 		if (!gs.nil(ctlobj_evidence))
 		{
-			var isLatestEvidence = this.ccHelper.isEvidenceForLatestRunPresent(assessment_id, 
-											assessment_run_id, ctlobj_evidence.primaryevidence);
+			var isLatestEvidence = this.ccUtil.isEvidenceForLatestRunPresent(this.assessment_id, 
+											lastest_assessment_run_id, ctlobj_evidence.primaryevidence);
 			if (!isLatestEvidence)
 				return output;
 			
-			var custom_compliancelogic_script = this.ccHelper.getCustomComplianceLogicForControlObj(ctl_obj);
+			var custom_compliancelogic_script = this.ccUtil.getCustomComplianceLogicForControlObj(ctl_obj, null);
 			if (custom_compliancelogic_script == null)
 			{
-				var compliance_rec = this.ccHelper.getLatestComplianceRecordForCriterias(assessment_id, 		assessment_run_id, ctlobj_evidence.primaryevidence, criterias, "");
+				var compliance_rec = this.ccUtil.getLatestComplianceRecordForCriterias(this.assessment_id, 		lastest_assessment_run_id, ctlobj_evidence.primaryevidence, criterias, "");
 				var evidencename_array = [];
 				evidencename_array.push(ctlobj_evidence.primaryevidence);
 				evidencename_array.push(ctlobj_evidence.supportingevidences);
 				result.push({
 					passed: compliance_rec.compliancestatus,
 					value: 500,
-					supportingDataIds: this.ccHelper.getSupportingEvidenceLinkId(assessment_id, 		assessment_run_id, evidencename_array )
+					supportingDataIds: this.ccUtil.getAllEvidenceURLId(this.assessment_id, 		lastest_assessment_run_id, evidencename_array )
 				});
 			}
 			else {
@@ -81,25 +83,26 @@ ComplianceCowIndicatorAssessment.prototype = {
 		var ctl_reqs = this.getControlRequirements(ctl_obj);
 		if (ctl_reqs.length > 0){
 			for (var req_index = 0; req_index < ctl_reqs.length; req_index ++){
-				var ctlreq_evidence = this.ccHelper.getEvidenceNamesForControlReq(ctl_reqs[req_index], null);
+				var ctlreq_evidence = this.ccUtil.getEvidenceNamesForControlReq(ctl_reqs[req_index], null);
 				if (!gs.nil(ctlreq_evidence))
 				{
-					var isLatestReqEvidence = this.ccHelper.isEvidenceForLatestRunPresent(assessment_id, 
-													assessment_run_id, ctlreq_evidence.primaryevidence);
+					var isLatestReqEvidence = this.ccUtil.isEvidenceForLatestRunPresent(this.assessment_id, 
+													lastest_assessment_run_id, ctlreq_evidence.primaryevidence);
 					if (!isLatestReqEvidence)
 						return output;
 					
-					var cclogic_script = this.ccHelper.getCustomComplianceLogicForControlReq(ctl_reqs[req_index]);
+					var cclogic_script = this.ccUtil.getCustomComplianceLogicForControlReq(ctl_reqs[req_index], null);
 					if (cclogic_script == null)
 					{
-						var compliancereq_rec = this.ccHelper.getLatestComplianceRecordForCriterias(assessment_id, assessment_run_id, ctlreq_evidence.primaryevidence, criterias, "");
+						var compliancereq_rec = this.ccUtil.getLatestComplianceRecordForCriterias(
+							this. assessment_id, lastest_assessment_run_id, ctlreq_evidence.primaryevidence, criterias, "");
 						var evidence_array = [];
 						evidence_array.push(ctlreq_evidence.primaryevidence);
 						evidence_array.push(ctlreq_evidence.supportingevidences);
 						result.push({
 							passed: compliancereq_rec.compliancestatus,
 							value: 500,
-							supportingDataIds: this.ccHelper.getSupportingEvidenceLinkId(assessment_id, 		assessment_run_id, evidence_array )
+							supportingDataIds: this.ccUtil.getAllEvidenceURLId(this.assessment_id, 		lastest_assessment_run_id, evidence_array )
 						});
 					}
 					else {
@@ -112,31 +115,31 @@ ComplianceCowIndicatorAssessment.prototype = {
 		output.value = 500;
 		for (var j=0; j <result.length; j++){
 			output.passed = true;
-			if (result.passed == this.ccConstScript.COMPLIANCE_STATUS.NON_COMPLIANT)
+			if (result[j].passed == this.ccConstScript.COMPLIANCE_STATUS.NON_COMPLIANT)
 				output.passed = false;
-			if (output.passed != false && result.passed == this.ccConstScript.COMPLIANCE_STATUS.NOT_DETERMINED )
+			if (output.passed != false && result[j].passed == this.ccConstScript.COMPLIANCE_STATUS.NOT_DETERMINED )
 				output.passed = null;
-			output.supportingDataIds.push(result.supportingDataIds);
+			output.supportingDataIds.push(result[j].supportingDataIds.toString());
 		}
 
 		//evidence_rec is null or compliancestatus is NOT_DETERMINED.. return output with null values
 		return output; 
 	},
     type: 'ComplianceCowIndicatorAssessment'
-}
+};
 ]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-25 20:56:14</sys_created_on>
         <sys_id>de027fe68374561054ba54dfeeaad371</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>ComplianceCowIndicatorAssessment</sys_name>
         <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
         <sys_update_name>sys_script_include_de027fe68374561054ba54dfeeaad371</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-25 23:15:22</sys_updated_on>
+        <sys_updated_on>2024-09-27 05:02:03</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>de027fe68374561054ba54dfeeaad371</id>

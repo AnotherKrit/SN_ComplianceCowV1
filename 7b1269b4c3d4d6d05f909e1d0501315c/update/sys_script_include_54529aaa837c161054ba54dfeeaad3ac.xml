@@ -40,10 +40,7 @@ ComplianceCowIndicatorHelper.prototype = {
 	},
 
     getEvidenceNamesForControlObj: function(control_obj, indicator_template_id) {
-		
-        //var ctl_obj = control.content;
         var evidence = {};
-
         if (control_obj != null && control_obj.active){
             var gr_ctl_mapping = new GlideRecord(this.ccConstScript.TABLES.EVIDENCE_CONTROL_MAPPING); 
             gr_ctl_mapping.addQuery('indicatortempateid', indicator_template_id);  
@@ -60,7 +57,6 @@ ComplianceCowIndicatorHelper.prototype = {
     },
 
     getEvidenceNamesForControlReq: function(control_requirement, indicator_template_id) {
-        
         var evidence = {};
         var gr_ctl_mapping = new GlideRecord(this.ccConstScript.TABLES.EVIDENCE_CTL_REQ_MAPPING); 
         gr_ctl_mapping.addQuery('indicatortempateid', indicator_template_id);  
@@ -96,9 +92,8 @@ ComplianceCowIndicatorHelper.prototype = {
             else
                 return null;
         }
-        else{
+        else
             return null;
-        }    
     },
 
 	//retrieves latest run id for the evidence for the given assessment from Evidence Data table
@@ -113,20 +108,20 @@ ComplianceCowIndicatorHelper.prototype = {
         gaEvidence.query();
         if (gaEvidence.next())
             max_evidence_time = gaEvidence.getAggregate('MAX', 'assessmenttime');
-			if (max_evidence_time != null)
-			{
-				var gr_record = new GlideRecord(this.ccConstScript.TABLES.EVIDENCE_DATA);
-				gr_record.addQuery('assessmentid', assessment_id);
-				gr_record.addQuery('evidencefilename', evidence_name);
-				gr_record.addQuery('assessmenttime', max_evidence_time);
-				gr_record.setLimit(1);
-				gr_record.query();
+		if (max_evidence_time != null)
+		{
+			var gr_record = new GlideRecord(this.ccConstScript.TABLES.EVIDENCE_DATA);
+			gr_record.addQuery('assessmentid', assessment_id);
+			gr_record.addQuery('evidencefilename', evidence_name);
+			gr_record.addQuery('assessmenttime', max_evidence_time);
+			gr_record.setLimit(1);
+			gr_record.query();
 
-				if (gr_record.next())
-					return gr_record.assessmentrunid;
-				else
-					return null;			
-			}
+			if (gr_record.next())
+				return gr_record.assessmentrunid;
+			else
+				return null;			
+		}
         return null;
     },
 
@@ -192,7 +187,7 @@ ComplianceCowIndicatorHelper.prototype = {
 	{
 		var gr_ctl_mapping = new GlideRecord(this.ccConstScript.TABLES.EVIDENCE_CONTROLREQ_MAPPING); 
 		gr_ctl_mapping.addQuery('indicatortempateid', indicator_template_id);  
-		gr_ctl_mapping.addQuery('sncontrolrequirement', control_req.sys_id);  
+		gr_ctl_mapping.addQuery('control_objective_requirement', control_req.sys_id);  
 		gr_ctl_mapping.query();
 		if (gr_ctl_mapping.next()){
 			if (!gs.nil(gr_ctl_mapping.customcompliancelogic))
@@ -243,14 +238,14 @@ ComplianceCowIndicatorHelper.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-25 12:31:54</sys_created_on>
         <sys_id>54529aaa837c161054ba54dfeeaad3ac</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>ComplianceCowIndicatorHelper</sys_name>
         <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
         <sys_update_name>sys_script_include_54529aaa837c161054ba54dfeeaad3ac</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-25 23:15:06</sys_updated_on>
+        <sys_updated_on>2024-09-26 17:34:03</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>54529aaa837c161054ba54dfeeaad3ac</id>

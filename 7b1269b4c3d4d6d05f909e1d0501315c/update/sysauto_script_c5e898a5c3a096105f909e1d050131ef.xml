@@ -75,7 +75,8 @@
 		grAssStatus.setValue("started_time", start_time );
 		response_json = JSON.parse(responseBody);
 
-		if (COMPLIANCECOW_API.SUCCESS_RESPONSE_STATUS.includes(httpStatusCode)){
+		grAssStatus.setValue("response_status_code", httpStatusCode);
+		if (cc_consts.COMPLIANCECOW_API.SUCCESS_RESPONSE_STATUS.includes(httpStatusCode)){
 			grAssStatus.setValue("assessment_run_id", response_json.id);
 			grAssStatus.setValue("request_status", "Started");
 			//gs.debug("Assessment Started");
@@ -84,7 +85,6 @@
 		else {
 			grAssStatus.setValue("request_status", "Failed");
 			grAssStatus.setValue("response_error_message",response_json.Description);
-			grAssStatus.setValue("response_status_code", httpStatusCode);
 			gs.debug("Assessment Error Status code : " + httpStatusCode ); 
 			//gs.debug("Assessment Error : " + responseBody);
 		}
@@ -104,14 +104,14 @@ catch(ex) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-09 16:19:50</sys_created_on>
         <sys_id>c5e898a5c3a096105f909e1d050131ef</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>ComplianceCow Start NIST FOR AWS Assessment</sys_name>
         <sys_package display_value="ComplianceCowV1" source="x_1507800_complian">7b1269b4c3d4d6d05f909e1d0501315c</sys_package>
         <sys_policy/>
         <sys_scope display_value="ComplianceCowV1">7b1269b4c3d4d6d05f909e1d0501315c</sys_scope>
         <sys_update_name>sysauto_script_c5e898a5c3a096105f909e1d050131ef</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-25 20:15:51</sys_updated_on>
+        <sys_updated_on>2024-09-26 22:49:56</sys_updated_on>
         <time_zone>US/Eastern</time_zone>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
